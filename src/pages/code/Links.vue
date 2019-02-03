@@ -1,42 +1,44 @@
 <template lang="pug">
-  .bicamera
-    h1
-      span.left Erik&nbsp;
-      span.right Ostrom
+  .codegrid
+    g-link.brand(to='/')
+      span.left E
+      span.right O
+
+    ul.contents
+      li
+        g-link(to='/code/work') work
+      li
+        g-link(to='/code/blog') blog
+      li
+        g-link(to='/code/links') links
+
+    .side.code
+      h3 code
 
     .main.code
-      h2 code
+      h1 links
 
-      p.
-        I'm a freelance web developer, architect, and designer.
-        I love to create robust, modern, humane software experiences.
+      ul.links
+        li
+          | Mostly open source:
+          a(href="https://github.com/eostrom") GitHub
+        li
+          | Curriculum vitae:
+          a(href="https://linkedin.com/in/eostrom") LinkedIn
+        li
+          | Q and A:
+          a(href="https://stackoverflow.com/users/2388479/erik-ostrom")
+            | Stack Overflow
+        li
+          | Human contact:
+          a(href="mailto:code@erikostrom.com") Email Me
 
-      ul.contents
-        li
-          g-link(to='/code/work') work
-        li
-          g-link(to='/code/blog') blog
-        li
-          g-link(to='/code/links') links
+    .side.other-side.arts
+      h3
+        g-link(to="/arts/links") arts
 
-    .main.arts
-      h2 arts
-
-      p.
-        I'm a composer, improviser, singer, player, and theater maker.
-        I love to create playful, moving, immersive artistic experiences.
-
-      ul.contents
-        li
-          g-link(to='/arts/work') work
-        li
-          g-link(to='/arts/blog') blog
-        li
-          g-link(to='/arts/links') links
-        li
-          g-link(to='/arts/shows') shows
-
-    h6 © 2019 Erik Ostrom
+    .footer
+      h6 © 2019 Erik Ostrom
 </template>
 
 <script>
@@ -71,27 +73,34 @@ html {
   color: #333;
   width: 100%;
   height: 100%;
+  font-size: 16px;
 }
 
 body {
   min-height: 100%;
 }
 
-.bicamera {
+.codegrid {
   height: 100vh;
   display: grid;
-  grid-template: auto 1fr auto / auto 1fr 1fr auto;
+  grid-template: auto 1fr auto / 5rem 1fr 1fr 5rem;
   grid-template-areas:
-    "header header header header"
-    "leftbar left right rightbar"
-    "footer footer footer footer";
+    "leftbrand header header rightbar"
+    "leftbar main main rightbar"
+    ". footer footer rightbar";
   text-align: center;
 }
 
-h1 {
-  grid-area: header;
-  font-size: 76px;
-  line-height: 88px;
+.brand {
+  grid-area: leftbrand;
+  font-size: 48px;
+  line-height: 72px;
+  padding: 0 0.25rem;
+  text-align: center;
+
+  &:hover {
+    text-decoration: none;
+  }
 
   .left {
     color: $arts-foreground;
@@ -110,6 +119,11 @@ h2 {
   line-height: 72px;
 }
 
+h3 {
+  font-size: 56px;
+  line-height: 72px;
+}
+
 h6 {
   font-size: 24px;
   line-height: 30px;
@@ -121,12 +135,61 @@ h6 {
 }
 
 .contents {
+  grid-area: header;
+  text-align: right;
   list-style: none;
-  padding: 0;
+  padding: 0 1rem;
+  margin: 0;
+  color: $code-foreground;
+  font:  14px $code-heading-font-family;
+  line-height: 72px;
+
+  li {
+    display: inline-block;
+    padding: 0 1rem;
+  }
+
+  a:link, a:visited {
+    color: $link-color;
+  }
 }
 
 a {
   text-decoration: none;
+  &:hover { text-decoration: underline; }
+}
+
+.side {
+  grid-area: leftbar;
+  position: relative;
+  color: $code-foreground;
+  font-family: $code-heading-font-family;
+
+  h3 {
+    position: absolute;
+    transform: rotate(270deg);
+    top: 4rem;
+    left: 0rem;
+  }
+}
+
+.side.other-side {
+  grid-area: rightbar;
+  background: $arts-background;
+  color: $arts-foreground;
+  filter: blur(2px) contrast(80%);
+  font-family: $arts-font-family;
+  font-style: italic;
+  overflow-x: hidden;
+
+  h3 {
+    top: 8.5rem;
+    left: 1rem;
+    filter: blur(2px) contrast(80%);
+    a:link, a:visited {
+      color: inherit;
+    }
+  }
 }
 
 .main {
@@ -139,7 +202,7 @@ a {
 }
 
 .main.code {
-  grid-area: left;
+  grid-area: main;
   background: $code-background;
   color: $code-foreground;
   text-align: right;
@@ -152,22 +215,17 @@ a {
   }
 }
 
-.main.arts {
-  grid-area: right;
-  background: $arts-background;
-  color: $arts-foreground;
-  text-align: left;
-  padding-right: 25%;
-  font-family: $arts-font-family;
-  font-style: italic;
-  font-size: 27px;
+.links {
+  list-style: none;
+  padding: 0;
+  line-height: 40px;
 }
 
-.contents {
-  margin-bottom: 3em;
-}
-
-h6 {
+.footer {
   grid-area: footer;
+  text-align: left;
+  padding: 0 2rem;
+  background: $code-background;
+  color: hsla(0, 0, 100, 0.2);
 }
 </style>
