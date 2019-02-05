@@ -3,10 +3,16 @@
 
 import DefaultLayout from '~/layouts/Default.vue'
 import 'normalize.css'
+import '~/assets/codearts.scss'
+
+import ArtsGrid from '~/layouts/ArtsGrid.vue'
+import CodeGrid from "./layouts/CodeGrid"
 
 export default function (Vue, {router, head, isClient}) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
+  Vue.component('ArtsGrid', ArtsGrid)
+  Vue.component('CodeGrid', CodeGrid)
 
   head.link.push({
     rel: 'stylesheet',

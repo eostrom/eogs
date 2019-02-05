@@ -1,0 +1,16 @@
+$code-hue: 225;
+$arts-hue: 300;
+$body-background: hsl(0, 100%, 0%); // black
+$code-background: hsl($code-hue, 100%, 50%);
+$arts-background: hsl($arts-hue, 100%, 50%);
+$code-foreground: $arts-background;
+$arts-foreground: $code-background;
+$link-color: hsl((($code-hue + $arts-hue) / 2 + 180) % 360, 100%, 50%);
+// $link-color: hsla(0, 0, 100, 0.5);
+$code-font-family: Inconsolata;
+$code-heading-font-family: droid-sans-mono;
+$arts-font-family: droid-serif;
+$arts-heading-font-family: droid-serif;
+$footer-font-family: droid-serif;
+
+$headings: 'h1, h2, h3, h4, h5, h6';
