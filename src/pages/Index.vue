@@ -87,7 +87,8 @@
   padding-right: 25%;
   font-family: $arts-font-family;
   font-style: italic;
-  font-size: 27px;
+  font-size: 28px;
+  letter-spacing: 0.05em;
 }
 
 .footer {

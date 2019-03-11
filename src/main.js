@@ -16,11 +16,6 @@ export default function (Vue, {router, head, isClient}) {
 
   head.link.push({
     rel: 'stylesheet',
-    href: 'https://use.typekit.net/fux0vds.css'
-  })
-
-  head.link.push({
-    rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css?family=Inconsolata'
+    href: 'https://fonts.googleapis.com/css?family=Noto+Serif|Roboto+Mono'
   })
 }

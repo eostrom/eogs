@@ -7,10 +7,10 @@ $code-foreground: $arts-background;
 $arts-foreground: $code-background;
 $link-color: hsl((($code-hue + $arts-hue) / 2 + 180) % 360, 100%, 50%);
 // $link-color: hsla(0, 0, 100, 0.5);
-$code-font-family: Inconsolata;
-$code-heading-font-family: droid-sans-mono;
-$arts-font-family: droid-serif;
-$arts-heading-font-family: droid-serif;
+$code-font-family: 'Roboto Mono';
+$code-heading-font-family: 'Roboto Mono';
+$arts-font-family: 'Noto Serif';
+$arts-heading-font-family: 'Noto Serif';
 $footer-font-family: droid-serif;
 
 $headings: 'h1, h2, h3, h4, h5, h6';
