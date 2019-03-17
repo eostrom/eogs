@@ -1,5 +1,31 @@
 @import '../assets/variables';
 
+:root {
+  --fs-0: 13px;
+  --lh-0: 25px;
+  --fs-1: 17px;
+  --lh-1: 30px;
+  --fs-2: 22px;
+  --lh-2: 38px;
+  --fs-3: 28px;
+  --lh-3: 46px;
+  --fs-4: 36px;
+  --lh-4: 58px;
+  --fs-5: 45px;
+  --lh-5: 71px;
+  --fs-6: 58px;
+  --lh-6: 90px;
+  --fs-7: 73px;
+  --lh-7: 112px;
+
+  --space-1: 6px;
+  --space-2: 9px;
+  --space-3: 14px;
+  --space-4: 23px;
+  --space-5: 37px;
+  --space-6: 60px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -9,7 +35,7 @@ html {
   color: #333;
   height: 100%;
   width: 100%;
-  font-size: 16px;
+  font-size: var(--fs-1);
 }
 
 body {
@@ -24,8 +50,9 @@ body {
 
 .brand {
   grid-area: brand;
-  font-size: 48px;
-  line-height: 72px;
+  font-size: var(--fs-7);
+  line-height: var(--fs-7);
+  height: var(--fs-7);
   padding: 0 0.25rem;
   text-align: center;
 
@@ -46,28 +73,51 @@ body {
 }
 
 h1 {
-  font-size: 56px;
-  line-height: 72px;
+  font-size: var(--fs-6);
+  line-height: var(--lh-6);
 }
 
 h2 {
-  font-size: 64px;
-  line-height: 72px;
+  font-size: var(--fs-5);
+  line-height: var(--lh-5);
 }
 
 h3 {
-  font-size: 56px;
-  line-height: 72px;
+  font-size: var(--fs-4);
+  line-height: var(--lh-4);
+}
+
+h4 {
+  font-size: var(--fs-3);
+  line-height: var(--lh-3);
+}
+
+h5 {
+  font-size: var(--fs-2);
+  line-height: var(--lh-2);
 }
 
 h6 {
-  font-size: 24px;
-  line-height: 30px;
+  font-size: var(--fs-1);
+  line-height: var(--lh-1);
   font-family: $footer-font-family;
 }
 
 #{$headings} {
-  margin: 1rem 0;
+  margin: 0rem 0;
+}
+
+.display {
+  font-size: var(--fs-3);
+  line-height: var(--fs-3);
+}
+
+.link-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: var(--fs-3);
+  line-height: var(--lh-3);
 }
 
 a {
@@ -102,7 +152,7 @@ a {
   filter: blur(2px) contrast(80%);
   overflow-x: hidden;
 
-  h3 {
+  .hemisphere {
     filter: blur(2px) contrast(80%);
 
     a:link,
@@ -114,14 +164,13 @@ a {
 
 .main {
   grid-area: main;
-  line-height: 28px;
   padding: 2rem 2rem 5rem;
 }
 
 .footer {
   grid-area: footer;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: var(--fs-2);
+  line-height: var(--lh-2);
   padding: 1em 2rem;
   font-family: $footer-font-family;
   color: hsla(0, 0%, 100%, 0.2);

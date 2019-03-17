@@ -2,7 +2,7 @@
   code-grid
     h1 links
 
-    ul.links
+    ul.link-list
       li
         | Mostly open source:
         a(href="https://github.com/eostrom") GitHub
@@ -23,11 +23,3 @@ export default {
  // ..
 }
 </script>
-
-<style lang="scss">
-.links {
-  list-style: none;
-  padding: 0;
-  line-height: 40px;
-}
-</style>

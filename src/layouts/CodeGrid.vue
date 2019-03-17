@@ -1,8 +1,9 @@
 <template lang="pug">
   .braingrid
     g-link.brand(to='/')
-      span.left E
-      span.right O
+      .monogram
+        span.left E
+        span.right O
 
     ul.contents-header
       li
@@ -13,13 +14,13 @@
         g-link(to='/code/links') links
 
     .side.code
-      h3 code
+      .hemisphere code
 
     .main.code
       slot
 
     .side.other-side.arts
-      h3
+      .hemisphere
         g-link(to="/arts/links") arts
 
     .footer © 2019 Erik Ostrom
@@ -38,15 +39,16 @@
 .contents-header {
   text-align: right;
   color: $code-foreground;
-  font: 14px $code-heading-font-family;
-  line-height: 72px;
+  font: var(--fs-0) $code-heading-font-family;
+  line-height: var(--fs-7);
 }
 
 .side {
   color: $code-foreground;
   font-family: $code-heading-font-family;
 
-  h3 {
+  .hemisphere {
+    font-size: var(--fs-6);
     position: absolute;
     transform: rotate(270deg);
     top: 4rem;
@@ -60,7 +62,7 @@
   font-family: $arts-font-family;
   font-style: italic;
 
-  h3 {
+  .hemisphere {
     top: 8.5rem;
     left: 1rem;
   }
@@ -72,7 +74,6 @@
   text-align: right;
   padding-left: 25%;
   font-family: $code-font-family;
-  font-size: 28px;
 
   #{$headings} {
     font-family: $code-heading-font-family;

@@ -4,7 +4,7 @@
       span.left Erik&nbsp;
       span.right Ostrom
 
-    .main.code
+    .main.code.display
       h1 code
 
       p.
@@ -19,7 +19,7 @@
         li
           g-link(to='/code/links') links
 
-    .main.arts
+    .main.arts.display
       h1 arts
 
       p.
@@ -51,8 +51,6 @@
 
 .brand {
   grid-area: header;
-  font-size: 76px;
-  line-height: 88px;
 }
 
 .contents {
@@ -72,7 +70,6 @@
   text-align: right;
   padding-left: 25%;
   font-family: $code-font-family;
-  font-size: 28px;
 
   #{$headings} {
     font-family: $code-heading-font-family;
@@ -87,7 +84,6 @@
   padding-right: 25%;
   font-family: $arts-font-family;
   font-style: italic;
-  font-size: 28px;
   letter-spacing: 0.05em;
 }
 

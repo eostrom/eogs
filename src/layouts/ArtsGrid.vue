@@ -1,8 +1,9 @@
 <template lang="pug">
   .braingrid
     g-link.brand(to='/')
-      span.left E
-      span.right O
+      .monogram
+        span.left E
+        span.right O
 
     ul.contents-header
       li
@@ -14,14 +15,14 @@
       li
         g-link(to='/arts/links') shows
 
-    .side.arts
-      h3 arts
+    .side.this-side.arts
+      .hemisphere arts
 
     .main.arts
       slot
 
     .side.other-side.code
-      h3
+      .hemisphere
         g-link(to="/code/links") code
 
     .footer © 2019 Erik Ostrom
@@ -37,19 +38,26 @@
     'othersidebar footer footer .';
 }
 
+.brand {
+  position: relative;
+
+  .monogram {
+    position: absolute;
+    right: 0;
+  }
+}
 .contents-header {
   text-align: left;
   color: $arts-foreground;
   font: 14px $arts-heading-font-family;
+  font: var(--fs-0) $arts-heading-font-family;
+  line-height: var(--fs-7);
   font-style: italic;
-  line-height: 72px;
 }
 
 .side {
-  color: $arts-foreground;
-  font-family: $arts-heading-font-family;
-
-  h3 {
+  .hemisphere {
+    font-size: var(--fs-6);
     position: absolute;
     transform: rotate(90deg);
     top: 4rem;
@@ -57,14 +65,20 @@
   }
 }
 
+.side.this-side {
+  color: $arts-foreground;
+  font-family: $arts-heading-font-family;
+  font-style: italic;
+}
+
 .side.other-side {
   background: $code-background;
   color: $code-foreground;
   font-family: $code-font-family;
 
-  h3 {
+  .hemisphere {
     top: 8.5rem;
-    right: 1rem;
+    right: 0rem;
   }
 }
 
@@ -75,7 +89,6 @@
   padding-right: 25%;
   font-family: $arts-font-family;
   font-style: italic;
-  font-size: 27px;
 }
 
 .footer {

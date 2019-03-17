@@ -2,7 +2,7 @@
   arts-grid
     h1 links
 
-    ul.links
+    ul.link-list
       li
         | Music:
         a(href="https://zonkyflay.bandcamp.com/") Bandcamp
@@ -22,11 +22,3 @@ export default {
  // ..
 }
 </script>
-
-<style lang="scss" scoped>
-.links {
-  list-style: none;
-  padding: 0;
-  line-height: 40px;
-}
-</style>
