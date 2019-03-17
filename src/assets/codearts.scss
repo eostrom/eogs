@@ -151,14 +151,21 @@ a {
   grid-area: othersidebar;
   filter: blur(2px) contrast(80%);
   overflow-x: hidden;
+  transition: filter 250ms;
 
   .hemisphere {
     filter: blur(2px) contrast(80%);
+    transition: filter 250ms;
 
     a:link,
     a:visited {
       color: inherit;
     }
+  }
+
+  &:hover,
+  .hemisphere:hover {
+    filter: blur(1px) contrast(90%);
   }
 }
 
