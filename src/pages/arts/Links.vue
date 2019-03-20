@@ -2,7 +2,7 @@
   arts-grid
     h1 links
 
-    ul.link-list
+    ul.link-list.display
       li
         | Music:
         a(href="https://zonkyflay.bandcamp.com/") Bandcamp

@@ -1,8 +1,8 @@
 <template lang="pug">
   .braingrid
     .brand
-      span.left Erik&nbsp;
-      span.right Ostrom
+      span.display.arts Erik&nbsp;
+      span.display.code Ostrom
 
     .main.code.display
       h1 code
@@ -40,8 +40,6 @@
 </template>
 
 <style lang="scss" scoped>
-@import '../assets/variables';
-
 .braingrid {
   grid-template-areas:
     'header header header header'
@@ -65,25 +63,14 @@
 
 .main.code {
   grid-area: left;
-  background: $code-background;
-  color: $code-foreground;
   text-align: right;
   padding-left: 25%;
-  font-family: $code-font-family;
-
-  #{$headings} {
-    font-family: $code-heading-font-family;
-  }
 }
 
 .main.arts {
   grid-area: right;
-  background: $arts-background;
-  color: $arts-foreground;
   text-align: left;
   padding-right: 25%;
-  font-family: $arts-font-family;
-  font-style: italic;
   letter-spacing: 0.05em;
 }
 

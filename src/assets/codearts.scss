@@ -1,4 +1,4 @@
-@import '../assets/variables';
+$headings: 'h1, h2, h3, h4, h5, h6';
 
 :root {
   --fs-0: 13px;
@@ -24,6 +24,20 @@
   --space-4: 23px;
   --space-5: 37px;
   --space-6: 60px;
+
+  --arts-font-family: 'Noto Serif';
+  --code-font-family: 'Roboto Mono';
+  --footer-font-family: 'Noto Serif';
+
+  --blue-hue: 225;
+  --pink-hue: 300;
+  // split complementary color scheme
+  --link-hue: calc((var(--blue-hue) + var(--pink-hue)) / 2 - 180);
+  --bright-blue: hsl(var(--blue-hue), 100%, 50%);
+  --bright-pink: hsl(var(--pink-hue), 100%, 50%);
+  --link-color: hsl(var(--link-hue), 100%, 50%);
+  --body-background: hsl(0, 100%, 0%); // black
+  --background-color: var(--body-background);
 }
 
 * {
@@ -31,8 +45,8 @@
 }
 
 html {
-  background: $body-background;
-  color: #333;
+  background: var(--body-background);
+  color: hsl(0, 0%, 100%); // white
   height: 100%;
   width: 100%;
   font-size: var(--fs-1);
@@ -60,15 +74,8 @@ body {
     text-decoration: none;
   }
 
-  .left {
-    color: $arts-foreground;
-    font-family: $arts-font-family;
-    font-style: italic;
-  }
-
-  .right {
-    color: $code-foreground;
-    font-family: $code-heading-font-family;
+  .display {
+    background: transparent;
   }
 }
 
@@ -100,24 +107,25 @@ h5 {
 h6 {
   font-size: var(--fs-1);
   line-height: var(--lh-1);
-  font-family: $footer-font-family;
+  font-family: var(--footer-font-family);
 }
 
 #{$headings} {
-  margin: 0rem 0;
-}
-
-.display {
-  font-size: var(--fs-3);
-  line-height: var(--fs-3);
+  margin: 0;
 }
 
 .link-list {
   list-style: none;
   padding: 0;
   margin: 0;
+  font-family: var(--display-font-family);
+  font-style: var(--display-font-style);
   font-size: var(--fs-3);
-  line-height: var(--lh-3);
+  line-height: var(--fs-3);
+
+  li + li {
+    margin-top: calc(var(--lh-3) - var(--fs-3));
+  }
 }
 
 a {
@@ -126,7 +134,7 @@ a {
 
   &:link,
   &:visited {
-    color: $link-color;
+    color: var(--link-color);
   }
 }
 
@@ -135,6 +143,8 @@ a {
   list-style: none;
   padding: 0 1rem;
   margin: 0;
+  font-size: var(--fs-0);
+  line-height: var(--fs-7);
 
   li {
     display: inline-block;
@@ -148,6 +158,7 @@ a {
 }
 
 .side.other-side {
+  background: var(--background-color);
   grid-area: othersidebar;
   filter: blur(2px) contrast(80%);
   overflow-x: hidden;
@@ -172,6 +183,37 @@ a {
 .main {
   grid-area: main;
   padding: 2rem 2rem 5rem;
+  background: var(--background-color);
+}
+
+.main.display {
+  font-size: var(--fs-3);
+  line-height: var(--fs-3);
+}
+
+.code {
+  --display-font-family: var(--code-font-family);
+  --display-font-style: normal;
+  --display-color: var(--bright-pink);
+  --background-color: var(--bright-blue);
+
+  #{$headings} {
+    text-align: right;
+  }
+}
+
+.arts {
+  --display-font-family: var(--arts-font-family);
+  --display-font-style: italic;
+  --display-color: var(--bright-blue);
+  --background-color: var(--bright-pink);
+}
+
+#{$headings},
+.display {
+  font-family: var(--display-font-family);
+  font-style: var(--display-font-style);
+  color: var(--display-color);
 }
 
 .footer {
@@ -179,6 +221,7 @@ a {
   font-size: var(--fs-2);
   line-height: var(--lh-2);
   padding: 1em 2rem;
-  font-family: $footer-font-family;
+  font-family: var(--footer-font-family);
   color: hsla(0, 0%, 100%, 0.2);
+  background: var(--background-color);
 }

@@ -1,11 +1,11 @@
 <template lang="pug">
-  .braingrid
+  .braingrid.arts
     g-link.brand(to='/')
       .monogram
-        span.left E
-        span.right O
+        span.display.arts E
+        span.display.code O
 
-    ul.contents-header
+    ul.contents-header.display
       li
         g-link(to='/arts/work') work
       li
@@ -15,13 +15,13 @@
       li
         g-link(to='/arts/links') shows
 
-    .side.this-side.arts
+    .side.this-side.display.arts
       .hemisphere arts
 
     .main.arts
       slot
 
-    .side.other-side.code
+    .side.other-side.display.code
       .hemisphere
         g-link(to="/code/links") code
 
@@ -29,8 +29,6 @@
 </template>
 
 <style lang="scss" scoped>
-@import '../assets/variables';
-
 .braingrid {
   grid-template-areas:
     'othersidebar header header brand'
@@ -46,13 +44,9 @@
     right: 0;
   }
 }
+
 .contents-header {
   text-align: left;
-  color: $arts-foreground;
-  font: 14px $arts-heading-font-family;
-  font: var(--fs-0) $arts-heading-font-family;
-  line-height: var(--fs-7);
-  font-style: italic;
 }
 
 .side {
@@ -65,17 +59,7 @@
   }
 }
 
-.side.this-side {
-  color: $arts-foreground;
-  font-family: $arts-heading-font-family;
-  font-style: italic;
-}
-
 .side.other-side {
-  background: $code-background;
-  color: $code-foreground;
-  font-family: $code-font-family;
-
   .hemisphere {
     top: 8.5rem;
     right: 0rem;
@@ -83,16 +67,11 @@
 }
 
 .main {
-  background: $arts-background;
-  color: $arts-foreground;
   text-align: left;
   padding-right: 25%;
-  font-family: $arts-font-family;
-  font-style: italic;
 }
 
 .footer {
   text-align: left;
-  background: $arts-background;
 }
 </style>

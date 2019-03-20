@@ -2,7 +2,7 @@
   code-grid
     h1 links
 
-    ul.link-list
+    ul.link-list.display
       li
         | Mostly open source:
         a(href="https://github.com/eostrom") GitHub
