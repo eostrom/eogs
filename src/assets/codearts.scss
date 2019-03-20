@@ -37,7 +37,7 @@ $headings: 'h1, h2, h3, h4, h5, h6';
   --bright-pink: hsl(var(--pink-hue), 100%, 50%);
   --link-color: hsl(var(--link-hue), 100%, 50%);
   --body-background: hsl(0, 100%, 0%); // black
-  --background-color: var(--body-background);
+  --background-color: transparent;
 }
 
 * {
@@ -45,7 +45,10 @@ $headings: 'h1, h2, h3, h4, h5, h6';
 }
 
 html {
-  background: var(--body-background);
+  background: var(--body-background) center / cover no-repeat fixed;
+  // translucent layer over overly bright background image
+  background-image: linear-gradient(#000c, #000c), url('/images/accordion.jpg');
+
   color: hsl(0, 0%, 100%); // white
   height: 100%;
   width: 100%;
