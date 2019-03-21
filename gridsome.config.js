@@ -1,4 +1,4 @@
-// This is where project configuration and plugin options are located. 
+// This is where project configuration and plugin options are located.
 // Learn more: https://gridsome.org/docs/config
 
 // Changes here requires a server restart.
@@ -12,9 +12,7 @@ module.exports = {
 
   transformers: {
     remark: {
-      plugins: [
-        [ 'gridsome-plugin-remark-shiki', { theme, skipInline: true } ]
-      ],
+      plugins: [['gridsome-plugin-remark-shiki', {theme, skipInline: true}]],
 
       grayMatter: {
         excerpt: true,
@@ -25,10 +23,10 @@ module.exports = {
 
   plugins: [
     {
-      use: "@gridsome/source-filesystem",
+      use: '@gridsome/source-filesystem',
       options: {
-        path: "blog/**/*.md",
-        typeName: "Post"
+        path: 'code/blog/**/*.md',
+        typeName: 'Post'
       }
     }
   ],
