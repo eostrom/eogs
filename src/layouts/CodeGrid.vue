@@ -59,11 +59,6 @@ export default {
   }
 }
 
-.main {
-  text-align: right;
-  padding-left: 25%;
-}
-
 .footer {
   text-align: right;
 }

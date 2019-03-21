@@ -68,11 +68,6 @@ export default {
   }
 }
 
-.main {
-  text-align: left;
-  padding-right: 25%;
-}
-
 .footer {
   text-align: left;
 }
