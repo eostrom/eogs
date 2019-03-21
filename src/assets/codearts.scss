@@ -25,9 +25,11 @@ $headings: 'h1, h2, h3, h4, h5, h6';
   --space-5: 37px;
   --space-6: 60px;
 
-  --arts-font-family: 'Noto Serif';
-  --code-font-family: 'Roboto Mono';
-  --footer-font-family: 'Noto Serif';
+  --arts-body-font-family: 'Noto Serif', serif;
+  --arts-display-font-family: 'Noto Serif', serif;
+  --code-body-font-family: 'Roboto', sans-serif;
+  --code-display-font-family: 'Roboto Mono', monospace;
+  --footer-font-family: 'Noto Serif', serif;
 
   --blue-hue: 225;
   --pink-hue: 300;
@@ -37,6 +39,8 @@ $headings: 'h1, h2, h3, h4, h5, h6';
   --link-tk-color: hsl(var(--link-hue), 75%, 25%);
   --bright-blue: hsl(var(--blue-hue), 100%, 50%);
   --bright-pink: hsl(var(--pink-hue), 100%, 50%);
+  --blue: hsl(var(--blue-hue), 75%, 75%);
+  --pink: hsl(var(--pink-hue), 75%, 75%);
   --body-background: hsl(0, 100%, 0%); // black
   --background-color: transparent;
 }
@@ -83,39 +87,26 @@ body {
   }
 }
 
+#{$headings} {
+  margin: 0;
+}
+
 h1 {
-  font-size: var(--fs-6);
-  line-height: var(--lh-6);
+  font-size: var(--fs-5);
+  line-height: var(--fs-5);
+  margin: calc((var(--lh-5) - var(--fs-5)) / 2) 0;
 }
 
 h2 {
-  font-size: var(--fs-5);
-  line-height: var(--lh-5);
+  font-size: var(--fs-3);
+  line-height: var(--fs-3);
+  margin: calc((var(--lh-3) - var(--fs-3)) / 2) 0;
 }
 
 h3 {
-  font-size: var(--fs-4);
-  line-height: var(--lh-4);
-}
-
-h4 {
-  font-size: var(--fs-3);
-  line-height: var(--lh-3);
-}
-
-h5 {
-  font-size: var(--fs-2);
-  line-height: var(--lh-2);
-}
-
-h6 {
   font-size: var(--fs-1);
   line-height: var(--lh-1);
-  font-family: var(--footer-font-family);
-}
-
-#{$headings} {
-  margin: 0;
+  margin: calc((var(--lh-1) - var(--fs-1)) / 2) 0;
 }
 
 .link-list {
@@ -193,6 +184,8 @@ a.tk {
   grid-area: main;
   padding: 2rem 2rem 5rem;
   background: var(--background-color);
+  font-family: var(--body-font-family);
+  color: var(--body-color);
 }
 
 .main.display {
@@ -201,8 +194,10 @@ a.tk {
 }
 
 .code {
-  --display-font-family: var(--code-font-family);
+  --body-font-family: var(--code-body-font-family);
+  --display-font-family: var(--code-display-font-family);
   --display-font-style: normal;
+  --body-color: var(--pink);
   --display-color: var(--bright-pink);
   --background-color: var(--bright-blue);
 
@@ -212,13 +207,16 @@ a.tk {
 }
 
 .arts {
-  --display-font-family: var(--arts-font-family);
+  --body-font-family: var(--arts-body-font-family);
+  --display-font-family: var(--arts-display-font-family);
   --display-font-style: italic;
+  --body-color: var(--blue);
   --display-color: var(--bright-blue);
   --background-color: var(--bright-pink);
 }
 
 #{$headings},
+code,
 .display {
   font-family: var(--display-font-family);
   font-style: var(--display-font-style);

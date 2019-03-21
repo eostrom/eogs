@@ -14,8 +14,11 @@ export default function (Vue, {router, head, isClient}) {
   Vue.component('ArtsGrid', ArtsGrid)
   Vue.component('CodeGrid', CodeGrid)
 
+  const fonts = ['Noto Serif', 'Roboto Mono', 'Roboto']
+  const fontQuery = fonts.join('|').replace(' ', '+')
+
   head.link.push({
     rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css?family=Noto+Serif|Roboto+Mono'
+    href: `https://fonts.googleapis.com/css?family=${fontQuery}`
   })
 }
