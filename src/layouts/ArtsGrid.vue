@@ -5,15 +5,7 @@
         span.display.arts E
         span.display.code O
 
-    ul.contents-header.display
-      li
-        g-link(to='/arts/work') work
-      li
-        g-link(to='/arts/blog') blog
-      li
-        g-link(to='/arts/links') links
-      li
-        g-link(to='/arts/links') shows
+    arts-contents.contents-header.display
 
     .side.this-side.display.arts
       .hemisphere arts
@@ -27,6 +19,16 @@
 
     .footer © 2019 Erik Ostrom
 </template>
+
+<script>
+import ArtsContents from '~/components/ArtsContents'
+
+export default {
+  components: {
+    ArtsContents
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 .braingrid {

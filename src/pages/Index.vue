@@ -11,13 +11,7 @@
         I'm a freelance web developer, architect, and designer.
         I love to create robust, modern, humane software experiences.
 
-      ul.contents
-        li
-          g-link(to='/code/work') work
-        li
-          g-link(to='/code/blog') blog
-        li
-          g-link(to='/code/links') links
+      code-contents.contents
 
     .main.arts.display
       h1 arts
@@ -26,18 +20,21 @@
         I'm a composer, improviser, singer, player, and theater maker.
         I love to create playful, moving, immersive artistic experiences.
 
-      ul.contents
-        li
-          g-link(to='/arts/work') work
-        li
-          g-link(to='/arts/blog') blog
-        li
-          g-link(to='/arts/links') links
-        li
-          g-link(to='/arts/shows') shows
+      arts-contents.contents
 
     .footer © 2019 Erik Ostrom
 </template>
+
+<script>
+import CodeContents from '~/components/CodeContents'
+import ArtsContents from '~/components/ArtsContents'
+
+export default {
+  components: {
+    ArtsContents, CodeContents
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 .braingrid {

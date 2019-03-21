@@ -5,13 +5,7 @@
         span.display.arts E
         span.display.code O
 
-    ul.contents-header.display
-      li
-        g-link(to='/code/work') work
-      li
-        g-link(to='/code/blog') blog
-      li
-        g-link(to='/code/links') links
+    code-contents.contents-header.display
 
     .side.this-side.display.code
       .hemisphere code
@@ -25,6 +19,16 @@
 
     .footer © 2019 Erik Ostrom
 </template>
+
+<script>
+import CodeContents from '~/components/CodeContents'
+
+export default {
+  components: {
+    CodeContents
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 .braingrid {
