@@ -10,6 +10,8 @@
 </template>
 
 <script>
+import { parseISO } from 'date-fns'
+
 const shortDateFormat = new Intl.DateTimeFormat('en-US', {
   month: 'short',
   day: 'numeric'
@@ -27,7 +29,7 @@ export default {
 
   computed: {
     date() {
-      return new Date(this.post.date)
+      return parseISO(this.post.date)
     },
 
     shortDate() {
