@@ -9,7 +9,7 @@
 
       p.
         I'm a freelance web developer, architect, and designer.
-        I love to create robust, modern, humane software experiences.
+        I love to create robust, modern, humane software experiences.
 
       code-contents.contents
 
@@ -18,7 +18,7 @@
 
       p.
         I'm a composer, improviser, singer, player, and theater maker.
-        I love to create playful, moving, immersive artistic experiences.
+        I love to create playful, moving, immersive artistic experiences.
 
       arts-contents.contents
 
@@ -40,7 +40,7 @@ export default {
 .braingrid {
   grid-template-areas:
     'header header header header'
-    'left left right right'
+    'code code arts arts'
     'footer footer footer footer';
 }
 
@@ -59,13 +59,13 @@ export default {
 }
 
 .main.code {
-  grid-area: left;
+  grid-area: code;
   text-align: right;
   padding-left: 25%;
 }
 
 .main.arts {
-  grid-area: right;
+  grid-area: arts;
   text-align: left;
   padding-right: 25%;
   letter-spacing: 0.05em;
@@ -73,5 +73,23 @@ export default {
 
 .footer {
   text-align: center;
+}
+
+@media (max-width: 480px) {
+  .braingrid {
+    grid-template-areas:
+      'header header header header'
+      'code code code code'
+      'arts arts arts arts'
+      'footer footer footer footer';
+  }
+
+  .main.code {
+    padding-left: 12.5%;
+  }
+
+  .main.arts {
+    padding-right: 12.5%;
+  }
 }
 </style>
