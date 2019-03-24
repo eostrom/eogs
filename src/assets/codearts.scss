@@ -250,3 +250,9 @@ code,
   color: hsla(0, 0%, 100%, 0.2);
   background: var(--background-color);
 }
+
+pre code {
+  display: block;
+  padding: var(--space-4);
+  overflow-x: scroll;
+}
