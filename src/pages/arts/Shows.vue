@@ -50,6 +50,12 @@ table {
   width: 100%;
 }
 
+th {
+  color: var(--bright-blue);
+  font-family: var(--arts-display-font-family);
+  font-style: italic;
+}
+
 td,
 th {
   padding: 0.5em 1em;
