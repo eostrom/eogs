@@ -5,10 +5,13 @@
     <table>
       <thead>
         <tr>
+          <td colspan="3"><h2>coming up</h2></td>
+        </tr>
+
+        <tr>
           <th>when</th>
           <th>where</th>
           <th>what</th>
-          <!--          <th>who</th>-->
         </tr>
       </thead>
 
@@ -19,8 +22,9 @@
           <td><a href="http://honeympls.com/">Honey, Minneapolis</a></td>
 
           <td>
+            Improv with
             <a href="https://www.facebook.com/imatrio/">I'm a trio.</a>
-            and three other groups at
+            at
             <a href="https://www.facebook.com/events/303882380295622/">
               Freshly Squeezed Improv.
             </a>
@@ -38,6 +42,73 @@
             Live guitar score for
             <a href="https://www.facebook.com/bummertown/">Bummertown,</a>
             the funniest sad improv in town.
+          </td>
+        </tr>
+      </tbody>
+
+      <thead>
+        <tr>
+          <td colspan="3"><h2>gone down</h2></td>
+        </tr>
+        <tr>
+          <th>when</th>
+          <th>where</th>
+          <th>what</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>March 23</td>
+
+          <td>
+            <a href="http://hugetheater.com/">HUGE Theater, Minneapolis</a>
+          </td>
+
+          <td>
+            Accompanied <a href="http://stirfridaynight.org/">
+              Stir Friday Night
+            </a>
+            and
+            <a href="https://www.facebook.com/BlackMenBlackPlanet/">
+              The Black Men from a Black Planet
+            </a>
+            at the
+            <a href="https://blackandfunny.com">
+              Black and Funny Improv Festival.
+            </a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>March 2</td>
+
+          <td>
+            <a href="http://hugetheater.com/">HUGE Theater, Minneapolis</a>
+          </td>
+
+          <td>
+            Accompanied
+            <a href="http://www.hugetheater.com/event/foul-play-an-improvised-agatha-christie/">
+              Foul Play: Improvised Agatha Christie.
+            </a>
+            <i>(There's been a murder.)</i>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Wednesdays in January and February</td>
+
+          <td>
+            <a href="http://hugetheater.com/">HUGE Theater, Minneapolis</a>
+          </td>
+
+          <td>
+            Accompanied
+            <a href="https://www.instagram.com/rebel_grrls/">
+              Rebel Grrls
+            </a> and also sometimes Kids at Camp, The Wünderkidz, and
+            House Party.
           </td>
         </tr>
       </tbody>
