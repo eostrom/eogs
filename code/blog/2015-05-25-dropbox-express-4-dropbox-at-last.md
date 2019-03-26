@@ -138,7 +138,7 @@ We can't actually try it in the browser yet, because our development
 server (`index.js`) doesn't load the `dotenv` configuration. In [part 5],
 we'll fix that, discover some gotchas, and write a better test.
 
-[contact]: #comments
+[contact]: mailto:code@erikostrom.com
 [part 3]: /2015/05/24/dropbox-express-3-simplest-app.html
 [dropbox app console]: https://www.dropbox.com/developers/apps
 [dotenv]: https://www.npmjs.com/package/dotenv

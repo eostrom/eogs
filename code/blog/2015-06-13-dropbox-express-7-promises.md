@@ -249,7 +249,7 @@ but it is a little easier to follow from top to bottom. It's still a lot
 of "functions passing functions to functions," though. We can do better.
 In part 8, we'll use generators to strip away some of the noise.
 
-[contact]: #comments
+[contact]: mailto:code@erikostrom.com
 [part 4]: /2015/05/25/dropbox-express-4-dropbox-at-last.html
 [part 6]: /2015/05/30/dropbox-express-6-double-dropbox.html
 [spread operator]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator

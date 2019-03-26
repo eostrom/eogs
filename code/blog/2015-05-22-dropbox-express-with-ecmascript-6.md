@@ -29,7 +29,7 @@ to know about the `npm init` step:
 When you install express, use the `--save` flag, so it'll be installed
 when you deploy the app, too.
 
-(You might as well `git init`, grab a [.gitignore](gitignore), and commit
+(You might as well `git init`, grab a [.gitignore][gitignore], and commit
 the code at this point.)
 
 ## The next JavaScript.
@@ -86,7 +86,7 @@ and my personal preferences (the rules).
 
 In [part 2], we'll start developing the app, test-first.
 
-[contact]: #comments
+[contact]: mailto:code@erikostrom.com
 [node]: http://nodejs.org/
 [install-express]: http://expressjs.com/starter/installing.html
 [npm-name-format]: https://docs.npmjs.com/files/package.json#people-fields-author-contributors

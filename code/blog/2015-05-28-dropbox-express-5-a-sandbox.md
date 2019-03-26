@@ -92,7 +92,7 @@ git ignore .env.test
 But file counts are boring. In [part 6], we'll choose a file and see
 what's inside it.
 
-[contact]: #comments
+[contact]: mailto:code@erikostrom.com
 [part 4]: /2015/05/25/dropbox-express-4-dropbox-at-last.html
 [dotenv]: https://www.npmjs.com/package/dotenv
 [part-4-dropbox-app]: /2015/05/25/dropbox-express-4-dropbox-at-last.html#a-test-app 
