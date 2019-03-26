@@ -2,9 +2,9 @@
   "name": "eogs",
   "private": true,
   "scripts": {
-    "build": "gridsome build",
-    "develop": "gridsome develop",
-    "explore": "gridsome explore",
+    "build": "node $NODE_DEBUG_OPTION node_modules/.bin/gridsome build",
+    "develop": "node $NODE_DEBUG_OPTION node_modules/.bin/gridsome develop",
+    "explore": "node $NODE_DEBUG_OPTION node_modules/.bin/gridsome explore",
     "lint:css": "stylelint 'src/**/*.{vue,css,scss}'"
   },
   "dependencies": {
