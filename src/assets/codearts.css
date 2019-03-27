@@ -34,7 +34,7 @@
   /* split-complementary color scheme */
   --link-hue: calc((var(--blue-hue) + var(--pink-hue)) / 2 - 180);
   --link-color: hsl(var(--link-hue), 100%, 50%);
-  --link-tk-color: hsl(var(--link-hue), 75%, 25%);
+  --link-tk-color: hsla(var(--link-hue), 100%, 50%, 0.25);
   --bright-blue: hsl(var(--blue-hue), 100%, 50%);
   --bright-pink: hsl(var(--pink-hue), 100%, 50%);
   --blue: hsl(var(--blue-hue), 75%, 85%);
@@ -117,7 +117,7 @@ h3 {
 
 a {
   text-decoration: none;
-  &:hover { text-decoration: underline; }
+  &:link:hover { text-decoration: underline; }
 
   &:link,
   &:visited {
@@ -126,7 +126,6 @@ a {
 }
 
 a.tk {
-  text-decoration: line-through;
   color: var(--link-tk-color);
 }
 
