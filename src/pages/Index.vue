@@ -36,7 +36,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .braingrid {
   grid-template-areas:
     'header header header header'
@@ -53,7 +53,7 @@ export default {
   padding: 0;
   margin: 0;
 
-  li {
+  & li {
     padding: 0;
   }
 }

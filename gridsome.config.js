@@ -37,5 +37,13 @@ module.exports = {
       .test(/\.pug$/)
       .use('pug-plain-loader')
       .loader('pug-plain-loader')
+  },
+
+  css: {
+    loaderOptions: {
+      postcss: {
+        plugins: [require('postcss-nesting')]
+      }
+    }
   }
 }

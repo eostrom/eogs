@@ -3,7 +3,7 @@
 
 import DefaultLayout from '~/layouts/Default.vue'
 import 'normalize.css'
-import '~/assets/codearts.scss'
+import '~/assets/codearts.css'
 
 import ArtsGrid from '~/layouts/ArtsGrid.vue'
 import CodeGrid from "./layouts/CodeGrid"

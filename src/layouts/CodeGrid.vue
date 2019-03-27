@@ -30,7 +30,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .braingrid {
   grid-template-areas:
     'brand header header othersidebar'
@@ -43,7 +43,7 @@ export default {
 }
 
 .side {
-  .hemisphere {
+  & .hemisphere {
     font-size: var(--fs-6);
     position: absolute;
     transform: rotate(270deg);
@@ -53,7 +53,7 @@ export default {
 }
 
 .side.other-side {
-  .hemisphere {
+  & .hemisphere {
     top: 8.5rem;
     left: 1rem;
   }
