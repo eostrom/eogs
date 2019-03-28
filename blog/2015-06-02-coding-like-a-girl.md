@@ -1,7 +1,10 @@
 ---
 title: Coding like a girl.
 date: 2015-06-02 21:37 UTC
-tags: programming, gender, feminism
+tags: 
+- programming
+- gender
+- feminism
 side: code
 ---
 

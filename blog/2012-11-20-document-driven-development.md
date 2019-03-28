@@ -1,7 +1,9 @@
 ---
 title: Document-driven development.
 date: 2012-11-20 02:08 -06:00
-tags: design, documentation
+tags: 
+- design
+- documentation
 side: code
 ---
 

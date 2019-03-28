@@ -3,7 +3,11 @@ supertitle: Dropbox Express with ECMAScript 6+
 subtitle: "Part 5: A sandbox."
 title: "Dropbox Express 5: A sandbox."
 date: 2015-05-28 21:31 UTC
-tags: dotenv, dropbox, node.js, testing 
+tags: 
+- dotenv
+- dropbox
+- node.js
+- testing 
 side: code
 ---
 

@@ -1,7 +1,9 @@
 ---
 title: Quantity queries.
 date: 2015-06-03 21:35 UTC
-tags: css, media queries
+tags: 
+- css
+- media queries
 side: code
 ---
 I enjoyed [Heydon Pickering]'s well-written explanation of a

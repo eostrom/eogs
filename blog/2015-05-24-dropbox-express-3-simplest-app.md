@@ -3,7 +3,11 @@ supertitle: Dropbox Express with ECMAScript 6+
 subtitle: "Part 3: The simplest app."
 title: "Dropbox Express 3: An app."
 date: 2015-05-24 17:51 UTC
-tags: node.js, express.js, es.next, babel
+tags: 
+- node.js
+- express.js
+- es.next
+- babel
 side: code
 ---
 
