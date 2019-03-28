@@ -4,6 +4,7 @@ subtitle: "Part 3: The simplest app."
 title: "Dropbox Express 3: An app."
 date: 2015-05-24 17:51 UTC
 tags: node.js, express.js, es.next, babel
+side: code
 ---
 
 *This is how I built a simple server-side JavaScript app on top of the

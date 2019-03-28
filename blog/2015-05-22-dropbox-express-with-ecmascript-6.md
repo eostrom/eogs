@@ -4,6 +4,7 @@ subtitle: "Part 1: Express, Babel."
 title: "Dropbox Express: Express, Babel."
 date: 2015-05-22 21:50 UTC
 tags: node.js, express.js, es.next, babel, eslint
+side: code
 ---
 
 *This is how I built a simple server-side JavaScript app on top of the

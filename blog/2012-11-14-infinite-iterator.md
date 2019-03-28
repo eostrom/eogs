@@ -2,6 +2,7 @@
 title: Infinite iterator.
 date: 2012-11-14 00:12 -06:00
 tags: ruby, tricks, loops
+side: code
 ---
 
 ```ruby

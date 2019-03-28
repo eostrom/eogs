@@ -3,7 +3,8 @@ supertitle: Dropbox Express with ECMAScript 6+
 subtitle: "Part 7: Promises."
 title: "Dropbox Express 7: Promises."
 date: 2015-06-13 23:16 UTC
-tags: dropbox, node.js, es.next, promises, refactoring 
+tags: dropbox, node.js, es.next, promises, refactoring
+side: code 
 ---
 
 *This is how I built a simple server-side JavaScript app on top of the

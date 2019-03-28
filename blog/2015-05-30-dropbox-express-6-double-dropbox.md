@@ -4,6 +4,7 @@ subtitle: "Part 6: Double boxing."
 title: "Dropbox Express 6: Double Dropbox."
 date: 2015-05-30 01:51 UTC
 tags: dropbox, node.js, es.next 
+side: code
 ---
 
 *This is how I built a simple server-side JavaScript app on top of the
