@@ -66,9 +66,7 @@ export default {
 
 .main.arts {
   grid-area: arts;
-  text-align: left;
   padding-right: 25%;
-  letter-spacing: 0.05em;
 }
 
 .footer {

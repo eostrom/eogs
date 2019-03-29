@@ -12,7 +12,7 @@
 
 <page-query>
 query Posts {
-  allPost (filter: {side: {eq: "code"}}) {
+  allPost (filter: {side: {eq: "code"}, status: {ne: "draft"}}) {
     edges {
       node {
         title

@@ -37,8 +37,8 @@
   --link-tk-color: hsla(var(--link-hue), 100%, 50%, 0.25);
   --bright-blue: hsl(var(--blue-hue), 100%, 50%);
   --bright-pink: hsl(var(--pink-hue), 100%, 50%);
-  --blue: hsl(var(--blue-hue), 75%, 85%);
-  --pink: hsl(var(--pink-hue), 75%, 85%);
+  --blue: hsl(var(--blue-hue), 75%, 90%);
+  --pink: hsl(var(--pink-hue), 75%, 90%);
   --body-background: hsl(0, 100%, 0%); /* black */
   --background-color: transparent;
 }
@@ -68,6 +68,11 @@ code,
   font-family: var(--display-font-family);
   font-style: var(--display-font-style);
   color: var(--display-color);
+}
+
+hr {
+  border-style: hidden;
+  height: 2em;
 }
 
 .braingrid {
@@ -210,6 +215,7 @@ a.tk {
 .main.arts {
   text-align: left;
   padding-right: 12.5%;
+  letter-spacing: 0.05em;
 }
 
 .main.arts.display {
@@ -232,6 +238,10 @@ a.tk {
   --body-color: var(--blue);
   --display-color: var(--bright-blue);
   --background-color: var(--bright-pink);
+}
+
+.footnotes {
+  opacity: 0.5;
 }
 
 .footer {
