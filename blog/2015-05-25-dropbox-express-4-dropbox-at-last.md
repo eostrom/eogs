@@ -145,7 +145,7 @@ server (`index.js`) doesn't load the `dotenv` configuration. In [part 5],
 we'll fix that, discover some gotchas, and write a better test.
 
 [contact]: mailto:code@erikostrom.com
-[part 3]: /2015/05/24/dropbox-express-3-simplest-app.html
+[part 3]: /code/blog/dropbox-express-3-an-app
 [dropbox app console]: https://www.dropbox.com/developers/apps
 [dotenv]: https://www.npmjs.com/package/dotenv
-[part 5]: /2015/05/28/dropbox-express-5-a-sandbox.html
+[part 5]: /code/blog/dropbox-express-5-a-sandbox

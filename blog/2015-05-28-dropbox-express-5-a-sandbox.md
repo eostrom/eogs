@@ -98,8 +98,8 @@ But file counts are boring. In [part 6], we'll choose a file and see
 what's inside it.
 
 [contact]: mailto:code@erikostrom.com
-[part 4]: /2015/05/25/dropbox-express-4-dropbox-at-last.html
+[part 4]: /code/blog/dropbox-express-4-the-dropbox-api
 [dotenv]: https://www.npmjs.com/package/dotenv
-[part-4-dropbox-app]: /2015/05/25/dropbox-express-4-dropbox-at-last.html#a-test-app 
+[part-4-dropbox-app]: /code/blog/dropbox-express-4-the-dropbox-api#a-test-app 
 [dropbox app console]: https://www.dropbox.com/developers/apps
-[part 6]: /2015/05/30/dropbox-express-6-double-dropbox.html
+[part 6]: /code/blog/dropbox-express-6-double-dropbox

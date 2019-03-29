@@ -84,6 +84,6 @@ your browser. It's so beautiful! Take a moment to breathe it all in.
 In [part 4], we'll finally start fetching files from Dropbox. 
 
 [contact]: mailto:code@erikostrom.com
-[part 2]: /2015/05/23/dropbox-express-2-zombie-testing.html
-[part 4]: /2015/05/25/dropbox-express-4-dropbox-at-last.html
+[part 2]: /code/blog/dropbox-express-2-zombie-testing
+[part 4]: /code/blog/dropbox-express-4-the-dropbox-api
  

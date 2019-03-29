@@ -98,7 +98,7 @@ what to do when things go wrong. In part 7, we'll use ECMAScript&nbsp;6
 [promises] to start making this easier to read.
 
 [contact]: mailto:code@erikostrom.com
-[part 5]: /2015/05/28/dropbox-express-5-a-sandbox.html
+[part 5]: /code/blog/dropbox-express-5-a-sandbox
 [2015-05-30.html]: /projects/dropbox-express/fixtures/2015-05-30.html
 [2015-05-31.html]: /projects/dropbox-express/fixtures/2015-05-31.html
 [promises]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise

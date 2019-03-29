@@ -100,4 +100,4 @@ In [part 2], we'll start developing the app, test-first.
 [es6]: http://es6-features.org/
 [eslint]: http://eslint.org/
 [async-await]: https://github.com/lukehoban/ecmascript-asyncawait
-[part 2]: /2015/05/23/dropbox-express-2-zombie-testing.html
+[part 2]: /code/blog/dropbox-express-2-zombie-testing
