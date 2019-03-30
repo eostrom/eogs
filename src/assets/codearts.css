@@ -35,8 +35,8 @@
   --link-hue: calc((var(--blue-hue) + var(--pink-hue)) / 2 - 180);
   --link-color: hsl(var(--link-hue), 100%, 50%);
   --link-tk-color: hsla(var(--link-hue), 100%, 50%, 0.25);
-  --bright-blue: hsl(var(--blue-hue), 100%, 50%);
-  --bright-pink: hsl(var(--pink-hue), 100%, 50%);
+  --bright-blue: hsl(var(--blue-hue), 90%, 50%);
+  --bright-pink: hsl(var(--pink-hue), 90%, 50%);
   --blue: hsl(var(--blue-hue), 75%, 90%);
   --pink: hsl(var(--pink-hue), 75%, 90%);
   --body-background: hsl(0, 100%, 0%); /* black */
@@ -241,7 +241,7 @@ a.tk {
 }
 
 .footnotes {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .footer {

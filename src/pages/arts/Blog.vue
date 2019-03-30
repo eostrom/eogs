@@ -1,18 +1,18 @@
 <template>
-  <code-grid>
-    <h1>code talk</h1>
+  <arts-grid>
+    <h1>arts talk</h1>
 
     <BlogPostExcerpt
       v-for="{ node: post } in $page.allPost.edges"
       :post="post"
       :key="post.id"
     />
-  </code-grid>
+  </arts-grid>
 </template>
 
 <page-query>
 query Posts {
-  allPost (filter: {side: {eq: "code"}, status: {ne: "draft"}}) {
+  allPost (filter: {side: {eq: "arts"}, status: {ne: "draft"}}) {
     edges {
       node {
         title

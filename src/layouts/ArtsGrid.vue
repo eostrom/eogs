@@ -15,7 +15,7 @@
 
     .side.other-side.display.code
       .hemisphere
-        g-link(to="/code/links") code
+        g-link(to="/code/blog") code
 
     .footer © 2019 Erik Ostrom
 </template>

@@ -15,7 +15,7 @@
 
     .side.other-side.display.arts
       .hemisphere
-        g-link(to="/arts/links") arts
+        g-link(to="/arts/blog") arts
 
     .footer © 2019 Erik Ostrom
 </template>
