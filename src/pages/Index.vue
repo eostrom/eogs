@@ -41,6 +41,7 @@ export default {
   grid-template-areas:
     'header header header header'
     'code code arts arts'
+    'code code arts arts'
     'footer footer footer footer';
 }
 

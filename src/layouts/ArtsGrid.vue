@@ -8,13 +8,13 @@
     arts-contents.contents-header.display
 
     .side.this-side.display.arts
-      .hemisphere arts
+      .side-label arts
 
     .main.arts
       slot
 
     g-link(to="/code/blog").side.other-side.display.code
-      .hemisphere code
+      .side-label code
 
     .footer © 2019 Erik Ostrom
 </template>
@@ -34,40 +34,28 @@ export default {
   grid-template-areas:
     'othersidebar header header brand'
     'othersidebar main main sidebar'
+    'othersidebar main main sidebar'
     'othersidebar footer footer .';
 }
 
 .brand {
-  position: relative;
-
   & .monogram {
-    position: absolute;
-    right: 0;
+    position: relative;
+    margin: 0 -0.1em;
+    right: 0.1em;
   }
 }
 
 .contents-header {
-  text-align: left;
+  flex-direction: row-reverse;
 }
 
-.side {
-  & .hemisphere {
-    font-size: var(--fs-6);
-    position: absolute;
-    transform: rotate(90deg);
-    top: 4rem;
-    right: 1rem;
-  }
+.side-label {
+  transform: rotate(90deg);
+  left: -0.7em;
 }
 
-.side.other-side {
-  & .hemisphere {
-    top: 8.5rem;
-    right: 0rem;
-  }
-}
-
-.footer {
-  text-align: left;
+.other-side .side-label {
+  left: -0.9em;
 }
 </style>
