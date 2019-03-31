@@ -13,9 +13,8 @@
     .main.code
       slot
 
-    .side.other-side.display.arts
-      .hemisphere
-        g-link(to="/arts/blog") arts
+    g-link(to="/arts/blog").side.other-side.display.arts
+      .hemisphere arts
 
     .footer © 2019 Erik Ostrom
 </template>

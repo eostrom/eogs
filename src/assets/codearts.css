@@ -31,14 +31,27 @@
 
   --blue-hue: 225;
   --pink-hue: 300;
+  /*
+  This "midway" is not mathematically at the midpoint, but at least
+  to my eyes the actual midpoint looked higher-contrast in blue-on-pink
+  than pink-on-blue. If I start using the midway hue elsewhere, I'll
+  reconsider.
+   */
+  --midway-hue: calc((var(--blue-hue) * 2 + var(--pink-hue) * 3) / 5);
+  --near-blue-hue: calc((var(--blue-hue) + var(--midway-hue)) / 2);
+  --near-pink-hue: calc((var(--pink-hue) + var(--midway-hue)) / 2);
+
   /* split-complementary color scheme */
-  --link-hue: calc((var(--blue-hue) + var(--pink-hue)) / 2 - 180);
+  --link-hue: calc(var(--midway-hue) - 180);
   --link-color: hsl(var(--link-hue), 100%, 50%);
   --link-tk-color: hsla(var(--link-hue), 100%, 50%, 0.25);
   --bright-blue: hsl(var(--blue-hue), 90%, 50%);
   --bright-pink: hsl(var(--pink-hue), 90%, 50%);
   --blue: hsl(var(--blue-hue), 75%, 90%);
   --pink: hsl(var(--pink-hue), 75%, 90%);
+  --midway-bright-color: hsl(var(--midway-hue), 90%, 50%);
+  --near-bright-blue: hsl(var(--near-blue-hue), 90%, 50%);
+  --near-bright-pink: hsl(var(--near-pink-hue), 90%, 50%);
   --body-background: hsl(0, 100%, 0%); /* black */
   --background-color: transparent;
 }
@@ -170,23 +183,24 @@ a.tk {
 .side.other-side {
   background: var(--background-color);
   grid-area: othersidebar;
-  filter: blur(2px) contrast(80%);
+  color: var(--far-display-color);
+  filter: blur(3px);
   overflow-x: hidden;
-  transition: filter 250ms;
+  transition: filter 250ms linear, color 250ms linear;
 
   & .hemisphere {
-    filter: blur(2px) contrast(80%);
-    transition: filter 250ms;
-
-    & a:link,
-    & a:visited {
-      color: inherit;
-    }
+    filter: blur(1px);
+    transition: filter 250ms linear, color 250ms linear;
   }
 
-  &:hover,
+  &:hover {
+    filter: blur(0);
+    color: var(--near-display-color);
+  }
+
   & .hemisphere:hover {
-    filter: blur(1px) contrast(90%);
+    filter: blur(0);
+    color: var(--display-color);
   }
 }
 
@@ -229,6 +243,8 @@ a.tk {
   --body-color: var(--pink);
   --display-color: var(--bright-pink);
   --background-color: var(--bright-blue);
+  --near-display-color: var(--near-bright-pink);
+  --far-display-color: var(--midway-bright-color);
 }
 
 .arts {
@@ -238,6 +254,8 @@ a.tk {
   --body-color: var(--blue);
   --display-color: var(--bright-blue);
   --background-color: var(--bright-pink);
+  --near-display-color: var(--near-bright-blue);
+  --far-display-color: var(--midway-bright-color);
 }
 
 .footnotes {
