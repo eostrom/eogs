@@ -10,20 +10,20 @@
   "dependencies": {
     "@gridsome/source-filesystem": "^0.3.0",
     "@gridsome/transformer-remark": "^0.2.1",
-    "@vue/eslint-config-prettier": "^4.0.1",
     "date-fns": "^2.0.0-alpha.27",
+    "gridsome": "^0.5.5",
+    "gridsome-plugin-remark-shiki": "^0.3.0",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "@vue/eslint-config-prettier": "^4.0.1",
     "eslint": "^5.15.3",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-vue": "^5.2.2",
-    "gridsome": "^0.5.5",
-    "gridsome-plugin-remark-shiki": "^0.3.0",
-    "normalize.css": "^8.0.1",
-    "stylelint-config-recommended": "^2.1.0"
-  },
-  "devDependencies": {
     "postcss-nesting": "^7.0.0",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
-    "stylelint": "^9.10.1"
+    "stylelint": "^9.10.1",
+    "stylelint-config-recommended": "^2.1.0"
   }
 }
