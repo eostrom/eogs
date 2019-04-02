@@ -220,6 +220,7 @@ a.tk {
   background: var(--background-color);
   font-family: var(--body-font-family);
   color: var(--body-color);
+  overflow: scroll;
 }
 
 .main.display {
