@@ -42,6 +42,12 @@ export default {
   flex-direction: row;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
 .side-label {
   transform: rotate(270deg);
   right: -0.9em;

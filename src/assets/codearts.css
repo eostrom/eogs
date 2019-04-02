@@ -113,24 +113,34 @@ hr {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
+  padding: 0.5em 0;
 }
 
 h1 {
   font-size: var(--fs-5);
   line-height: var(--fs-5);
-  margin: calc((var(--lh-5) - var(--fs-5)) / 2) 0;
+  padding: calc((var(--lh-5) - var(--fs-5)) / 2) 0;
 }
 
 h2 {
   font-size: var(--fs-3);
   line-height: var(--fs-3);
-  margin: calc((var(--lh-3) - var(--fs-3)) / 2) 0;
+  padding: calc((var(--lh-3) - var(--fs-3)) / 2) 0;
 }
 
 h3 {
   font-size: var(--fs-1);
   line-height: var(--lh-1);
-  margin: calc((var(--lh-1) - var(--fs-1)) / 2) 0;
+  padding: calc((var(--lh-1) - var(--fs-1)) / 2) 0;
+}
+
+p {
+  margin: 0;
+  padding: 0.5em 0;
+}
+
+p, li {
+  max-width: 60ch;
 }
 
 a {
@@ -163,7 +173,7 @@ a.tk {
 
 .link-list {
   list-style: none;
-  padding: 0;
+  padding: 0.5rem 0;
   margin: 0;
   font-family: var(--display-font-family);
   font-style: var(--display-font-style);
@@ -269,6 +279,10 @@ a.tk {
   --far-display-color: var(--midway-bright-color);
 }
 
+pre.shiki {
+  max-width: 80ch;
+}
+
 .footnotes {
   opacity: 0.6;
 }
@@ -315,7 +329,7 @@ pre code {
   h1 {
     font-size: var(--fs-4);
     line-height: var(--fs-4);
-    margin: calc((var(--lh-4) - var(--fs-4)) / 2) 0;
+    padding: calc((var(--lh-4) - var(--fs-4)) / 2) 0;
   }
 
   .main.display {

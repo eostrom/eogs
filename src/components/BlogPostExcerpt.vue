@@ -46,10 +46,6 @@ export default {
 </script>
 
 <style scoped>
-article + article {
-  margin-top: calc(var(--lh-2) - var(--fs-2));
-}
-
 h2 {
   font-size: var(--fs-2);
   line-height: var(--fs-2);

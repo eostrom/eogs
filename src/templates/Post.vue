@@ -41,6 +41,7 @@ export default {
 
 <style scoped>
 .body {
+  max-width: 100%;
   text-align: left;
 }
 </style>
