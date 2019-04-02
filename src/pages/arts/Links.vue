@@ -1,6 +1,6 @@
 <template lang="pug">
   arts-grid
-    h1 links
+    h1 links:
 
     ul.link-list.display
       li

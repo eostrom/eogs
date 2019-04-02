@@ -1,6 +1,6 @@
 <template>
   <arts-grid>
-    <h1>arts talk</h1>
+    <h1>talk:</h1>
 
     <BlogPostExcerpt
       v-for="{ node: post } in $page.allPost.edges"
