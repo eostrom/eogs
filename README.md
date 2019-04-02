@@ -1,3 +1,3 @@
 # my web site
 `
-my web site (coming soon)
+[my web site](https://www.erikostrom.com/)
