@@ -122,6 +122,9 @@ h1 {
   padding: calc((var(--lh-5) - var(--fs-5)) / 2) 0;
 }
 
+h1::before { content: '[' }
+h1::after { content: ']' }
+
 h2 {
   font-size: var(--fs-3);
   line-height: var(--fs-3);

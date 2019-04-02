@@ -1,6 +1,6 @@
 <template>
   <code-grid>
-    <h1>:work</h1>
+    <h1>work</h1>
 
     <h2>
       I work with clients to make things happen on the&nbsp;web.

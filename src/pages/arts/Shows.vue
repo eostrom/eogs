@@ -1,6 +1,6 @@
 <template>
   <arts-grid>
-    <h1>shows:</h1>
+    <h1>shows</h1>
 
     <table>
       <thead>

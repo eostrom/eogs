@@ -37,6 +37,10 @@ export default {
 </script>
 
 <style scoped>
+h1::before, h1::after {
+  content: '';
+}
+
 .braingrid {
   grid-template-areas:
     'header header header header'
