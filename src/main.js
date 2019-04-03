@@ -21,4 +21,9 @@ export default function (Vue, {router, head, isClient}) {
     rel: 'stylesheet',
     href: `https://fonts.googleapis.com/css?family=${fontQuery}`
   })
+
+  head.meta.push({
+    name: 'og:image',
+    content: '/images/accordion.jpg'
+  })
 }
