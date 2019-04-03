@@ -133,6 +133,14 @@
   </arts-grid>
 </template>
 
+<script>
+export default {
+  metaInfo: {
+    title: 'arts/shows'
+  }
+}
+</script>
+
 <style scoped>
 table {
   width: 100%;

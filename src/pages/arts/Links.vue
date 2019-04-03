@@ -19,6 +19,8 @@
 
 <script>
 export default {
- // ..
+  metaInfo: {
+    title: 'arts/links'
+  }
 }
 </script>

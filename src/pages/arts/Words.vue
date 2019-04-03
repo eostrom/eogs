@@ -1,6 +1,6 @@
 <template>
   <arts-grid>
-    <h1>talk</h1>
+    <h1>words</h1>
 
     <BlogPostExcerpt
       v-for="{ node: post } in $page.allPost.edges"
@@ -26,12 +26,17 @@ query Posts {
   }
 }
 </page-query>
+
 <script>
 import BlogPostExcerpt from '~/components/BlogPostExcerpt'
 
 export default {
   components: {
     BlogPostExcerpt
+  },
+
+  metaInfo: {
+    title: 'arts/words'
   }
 }
 </script>

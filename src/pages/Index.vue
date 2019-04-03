@@ -31,7 +31,12 @@ import ArtsContents from '~/components/ArtsContents'
 
 export default {
   components: {
-    ArtsContents, CodeContents
+    ArtsContents,
+    CodeContents
+  },
+
+  metaInfo: {
+    title: 'home'
   }
 }
 </script>

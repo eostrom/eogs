@@ -13,7 +13,7 @@
     .main.arts
       slot
 
-    g-link(to="/code/blog").side.other-side.display.code
+    g-link(to="/code/words").side.other-side.display.code
       .side-label code
 
     .footer © 2019 Erik Ostrom

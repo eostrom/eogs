@@ -20,6 +20,8 @@
 
 <script>
 export default {
- // ..
+  metaInfo: {
+    title: 'code/links'
+  }
 }
 </script>

@@ -1,6 +1,6 @@
 <template>
   <code-grid>
-    <h1>talk</h1>
+    <h1>words</h1>
 
     <BlogPostExcerpt
       v-for="{ node: post } in $page.allPost.edges"
@@ -32,6 +32,10 @@ import BlogPostExcerpt from '~/components/BlogPostExcerpt'
 export default {
   components: {
     BlogPostExcerpt
+  },
+
+  metaInfo: {
+    title: 'code/words'
   }
 }
 </script>
