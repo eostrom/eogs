@@ -36,13 +36,22 @@ export default {
   },
 
   metaInfo: {
-    title: 'home'
+    title: 'home',
+    meta: [
+      {
+        key: 'description',
+        name: 'description',
+        content:
+          'Composer, web developer, improviser, software engineer, and so on, you know, one of those.'
+      }
+    ]
   }
 }
 </script>
 
 <style scoped>
-h1::before, h1::after {
+h1::before,
+h1::after {
   content: '';
 }
 
