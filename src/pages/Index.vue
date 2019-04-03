@@ -36,7 +36,7 @@ export default {
   },
 
   metaInfo: {
-    title: 'home',
+    title: 'code|arts',
     meta: [
       {
         key: 'description',

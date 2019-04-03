@@ -136,7 +136,7 @@
 <script>
 export default {
   metaInfo: {
-    title: 'arts/shows'
+    title: 'arts[shows]'
   }
 }
 </script>

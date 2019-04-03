@@ -21,7 +21,7 @@
 <script>
 export default {
   metaInfo: {
-    title: 'code/links'
+    title: 'code[links]'
   }
 }
 </script>

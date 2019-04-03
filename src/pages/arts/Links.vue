@@ -20,7 +20,7 @@
 <script>
 export default {
   metaInfo: {
-    title: 'arts/links'
+    title: 'arts[links]'
   }
 }
 </script>

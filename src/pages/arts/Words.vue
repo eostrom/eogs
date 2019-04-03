@@ -36,7 +36,7 @@ export default {
   },
 
   metaInfo: {
-    title: 'arts/words'
+    title: 'arts[words]'
   }
 }
 </script>

@@ -81,7 +81,7 @@
 <script>
 export default {
   metaInfo: {
-    title: 'code/works'
+    title: 'code[works]'
   }
 }
 </script>
