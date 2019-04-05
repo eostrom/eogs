@@ -7,7 +7,7 @@
         | Music:
         a(href="https://zonkyflay.bandcamp.com/") Bandcamp
       li
-        | Music video:
+        | Video:
         a(href="https://www.youtube.com/user/eostrom") YouTube
       li
         | Photos:

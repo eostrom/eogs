@@ -10,9 +10,9 @@
         | Curriculum vitae:
         a(href="https://linkedin.com/in/eostrom") LinkedIn
       li
-        | Q and A:
-        a(href="https://stackoverflow.com/users/2388479/erik-ostrom")
-          | Stack Overflow
+        | Brief remarks:
+        a(href="https://twitter.com/erikostrom")
+          | Twitter
       li
         | Human contact:
         a(href="mailto:code@erikostrom.com") Email Me
