@@ -140,7 +140,7 @@ requires another file that doesn't exist yet: the actual app. How
 frustrating! We'll write it in [part 3].
 
 [contact]: mailto:code@erikostrom.com
-[part 1]: /code/blog/dropbox-express-express-babel
+[part 1]: /code/words/dropbox-express-express-babel
 [outside-in testing]: https://robots.thoughtbot.com/testing-from-the-outsidein
 [zombie]: http://zombie.js.org/
 [dropbox-oauth]: https://www.dropbox.com/developers/reference/oauthguide
@@ -149,4 +149,4 @@ frustrating! We'll write it in [part 3].
 [const]: http://es6-features.org/#Constants
 [fat-arrow]: http://es6-features.org/#StatementBodies
 [browsercontext]: http://victorarias.com.br/2014/08/24/end-to-end-testing-with-node-js.html
-[part 3]: /code/blog/dropbox-express-3-an-app
+[part 3]: /code/words/dropbox-express-3-an-app

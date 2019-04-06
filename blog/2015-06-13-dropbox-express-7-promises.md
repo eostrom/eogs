@@ -256,8 +256,8 @@ of "functions passing functions to functions," though. We can do better.
 In part 8, we'll use generators to strip away some of the noise.
 
 [contact]: mailto:code@erikostrom.com
-[part 4]: /code/blog/dropbox-express-4-the-dropbox-api
-[part 6]: /code/blog/dropbox-express-6-double-dropbox
+[part 4]: /code/words/dropbox-express-4-the-dropbox-api
+[part 6]: /code/words/dropbox-express-6-double-dropbox
 [spread operator]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator
 
 [array destructuring]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
