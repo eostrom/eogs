@@ -16,35 +16,14 @@
       </thead>
 
       <tbody>
-        <tr>
-          <td>May 6</td>
+        <tr v-for="show in shows" :key="show.path">
+          <td>{{ show.when }}</td>
 
           <td>
-            <a href="https://parksquaretheatre.org">Park Square Theater</a>
+            <a :href="show.whereUrl">{{ show.where }}</a>
           </td>
 
-          <td>
-            Oncoming Productions and four other companies present
-            <a
-              href="https://www.minnesotafringe.org/event-calendar/five-fifths"
-            >
-              Five Fifths of Mary Poppins.
-            </a>
-          </td>
-        </tr>
-
-        <tr>
-          <td>Fridays in July and August</td>
-
-          <td>
-            <a href="http://hugetheater.com/">HUGE Theater, Minneapolis</a>
-          </td>
-
-          <td>
-            Live guitar score for
-            <a href="https://www.facebook.com/bummertown/">Bummertown,</a>
-            the funniest sad improv in town.
-          </td>
+          <td class="show-what" v-html="show.content"></td>
         </tr>
       </tbody>
 
@@ -133,8 +112,33 @@
   </arts-grid>
 </template>
 
+<page-query>
+query Shows {
+  allShow  {
+    edges {
+      node {
+        path
+        when
+        where
+        whereUrl
+        content
+        lastDate
+      }
+    }
+  }
+}
+</page-query>
+
 <script>
 export default {
+  computed: {
+    shows() {
+      return this.$page.allShow.edges
+        .map(edge => edge.node)
+        .sort((a, b) => (a.path < b.path ? -1 : a.path > b.path ? 1 : 0))
+    }
+  },
+
   metaInfo: {
     title: 'arts[shows]'
   }

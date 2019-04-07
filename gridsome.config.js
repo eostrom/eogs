@@ -29,6 +29,13 @@ module.exports = {
         typeName: 'Post',
         route: ':side/words/:slug'
       }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'shows/*.md',
+        typeName: 'Show'
+      }
     }
   ],
 
