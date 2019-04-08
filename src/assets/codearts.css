@@ -194,6 +194,10 @@ a.tk {
   position: relative;
 }
 
+a.side {
+  color: var(--display-color);
+}
+
 .side-label {
   font-size: var(--fs-6);
   position: absolute;

@@ -7,7 +7,7 @@
 
     code-contents.contents-header.display
 
-    .side.this-side.display.code
+    g-link(to="/code/words").side.this-side.display.code
       .side-label code
 
     .main.code

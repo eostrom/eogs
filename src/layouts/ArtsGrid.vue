@@ -7,7 +7,7 @@
 
     arts-contents.contents-header.display
 
-    .side.this-side.display.arts
+    g-link(to="/arts/words").side.this-side.display.arts
       .side-label arts
 
     .main.arts
