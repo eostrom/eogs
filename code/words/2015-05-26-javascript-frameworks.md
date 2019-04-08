@@ -4,7 +4,6 @@ date: 2015-05-26 16:03 UTC
 tags: 
 - javascript
 - front-end
-side: code
 ---
 Still loving this line from [@apike]:
 

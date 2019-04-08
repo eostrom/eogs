@@ -10,7 +10,6 @@ tags:
 - es.next
 - babel
 - testing
-side: code
 ---
 
 *This is how I built a simple server-side JavaScript app on top of the

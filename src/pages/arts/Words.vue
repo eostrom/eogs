@@ -3,7 +3,7 @@
     <h1>words</h1>
 
     <BlogPostExcerpt
-      v-for="{ node: post } in $page.allPost.edges"
+      v-for="{ node: post } in $page.allArtsPost.edges"
       :post="post"
       :key="post.id"
     />
@@ -12,7 +12,7 @@
 
 <page-query>
 query Posts {
-  allPost (filter: {side: {eq: "arts"}, status: {ne: "draft"}}) {
+  allArtsPost (filter: {status: {ne: "draft"}}) {
     edges {
       node {
         title

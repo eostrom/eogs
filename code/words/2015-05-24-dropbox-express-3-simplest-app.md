@@ -8,7 +8,6 @@ tags:
 - express.js
 - es.next
 - babel
-side: code
 ---
 
 *This is how I built a simple server-side JavaScript app on top of the

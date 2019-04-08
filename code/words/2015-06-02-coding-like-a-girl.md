@@ -5,7 +5,6 @@ tags:
 - programming
 - gender
 - feminism
-side: code
 ---
 
 Taking a break from blogging while I rebuild my development machine.

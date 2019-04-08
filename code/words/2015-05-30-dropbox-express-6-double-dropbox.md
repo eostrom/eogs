@@ -7,7 +7,6 @@ tags:
 - dropbox
 - node.js
 - es.next 
-side: code
 ---
 
 *This is how I built a simple server-side JavaScript app on top of the

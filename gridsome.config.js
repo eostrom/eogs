@@ -25,9 +25,17 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: 'blog/**/*.md',
-        typeName: 'Post',
-        route: ':side/words/:slug'
+        path: 'code/words/*.md',
+        typeName: 'CodePost',
+        route: 'code/words/:slug'
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'arts/words/*.md',
+        typeName: 'ArtsPost',
+        route: 'arts/words/:slug'
       }
     },
     {

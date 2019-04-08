@@ -7,33 +7,11 @@
   </component>
 </template>
 
-<page-query>
-query Post ($path: String!) {
-  post: post (path: $path) {
-    title
-    content
-    side
-  }
-}
-</page-query>
-
 <script>
-import CodeGrid from '../layouts/CodeGrid'
-import ArtsGrid from '../layouts/ArtsGrid'
-
 export default {
   metaInfo() {
     return {
       title: this.$page.post.title
-    }
-  },
-
-  computed: {
-    gridComponent() {
-      return {
-        code: CodeGrid,
-        arts: ArtsGrid
-      }[this.$page.post.side]
     }
   }
 }
