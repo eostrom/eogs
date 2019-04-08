@@ -17,10 +17,10 @@
 
       <tbody>
         <tr v-for="show in shows" :key="show.path">
-          <td>{{ show.when }}</td>
+          <td v-html="show.when"></td>
 
           <td>
-            <a :href="show.whereUrl">{{ show.where }}</a>
+            <a :href="show.whereUrl" v-html="show.where"></a>
           </td>
 
           <td class="show-what" v-html="show.content"></td>

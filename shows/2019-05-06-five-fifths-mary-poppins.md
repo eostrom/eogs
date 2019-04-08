@@ -1,5 +1,5 @@
 ---
-when: Monday, May 6
+when: Monday, May&nbsp;6
 where: Park Square Theater
 whereUrl: https://parksquaretheatre.org
 lastDate: 2019-05-06
