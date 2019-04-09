@@ -233,12 +233,12 @@ a.side {
     transition: filter 250ms linear, color 250ms linear;
   }
 
-  &:hover {
+  &:hover, &:focus {
     filter: blur(0);
     color: var(--near-display-color);
   }
 
-  & .side-label:hover {
+  & .side-label:hover, & .side-label:focus {
     filter: blur(0);
     color: var(--display-color);
   }
