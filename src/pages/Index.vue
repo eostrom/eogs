@@ -11,7 +11,7 @@
         I'm a freelance web developer, architect, and designer.
         I love to create robust, modern, humane software experiences.
 
-      code-contents.contents
+      code-contents
 
     .main.arts.display
       h1 arts
@@ -20,7 +20,7 @@
         I'm a composer, improviser, singer, player, and theater maker.
         I love to create playful, moving, immersive artistic experiences.
 
-      arts-contents.contents
+      arts-contents
 
     .footer © 2019 Erik Ostrom
 </template>
@@ -65,16 +65,6 @@ h1::after {
 
 .brand {
   grid-area: header;
-}
-
-.contents {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-
-  & li {
-    padding: 0;
-  }
 }
 
 .main.code {
