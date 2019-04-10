@@ -24,6 +24,6 @@ export default function (Vue, {router, head, isClient}) {
 
   head.meta.push({
     name: 'og:image',
-    content: '/images/accordion.jpg'
+    content: '/images/masked-accordion.png'
   })
 }
