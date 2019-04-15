@@ -147,6 +147,10 @@ p, li {
   max-width: 60ch;
 }
 
+p img {
+  max-width: 100%;
+}
+
 a {
   text-decoration: none;
   &:link:hover { text-decoration: underline; }
