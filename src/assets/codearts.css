@@ -43,11 +43,11 @@
 
   /* split-complementary color scheme */
   --link-hue: calc(var(--midway-hue) - 180);
-  --link-color: hsl(var(--link-hue), 100%, 50%);
+  --link-color: hsl(var(--link-hue), 100%, 55%);
   --link-tk-color: hsla(var(--link-hue), 100%, 50%, 0.25);
   --bright-blue: hsl(var(--blue-hue), 90%, 50%);
   --bright-pink: hsl(var(--pink-hue), 90%, 50%);
-  --blue: hsl(var(--blue-hue), 75%, 90%);
+  --blue: hsl(var(--blue-hue), 75%, 95%);
   --pink: hsl(var(--pink-hue), 75%, 90%);
   --midway-bright-color: hsl(var(--midway-hue), 90%, 50%);
   --near-bright-blue: hsl(var(--near-blue-hue), 90%, 50%);
