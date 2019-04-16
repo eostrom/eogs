@@ -143,11 +143,11 @@ p {
   padding: 0.5em 0;
 }
 
-p, li {
+p, ul, ol {
   max-width: 60ch;
 }
 
-p img {
+p img, li img {
   max-width: 100%;
 }
 
@@ -301,6 +301,26 @@ a.side {
   --background-color: var(--bright-pink);
   --near-display-color: var(--near-bright-blue);
   --far-display-color: var(--midway-bright-color);
+}
+
+.body ul, .body ol {
+  padding: 0 0 0 2ch;
+}
+
+.body ul {
+  list-style-type: circle;
+}
+
+.body li {
+  padding: 0.5em 0;
+}
+
+.body li:first-child {
+  padding-top: 0;
+}
+
+.body li:last-child {
+  padding-bottom: 0;
 }
 
 pre.shiki {
