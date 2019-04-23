@@ -312,7 +312,7 @@ a.side {
 }
 
 .body li {
-  padding: 0.5em 0;
+  padding: 0.125em 0;
 }
 
 .body li:first-child {
