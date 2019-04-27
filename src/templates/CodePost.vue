@@ -3,6 +3,7 @@ query Post ($path: String!) {
   post: codePost (path: $path) {
     title
     content
+    date
   }
 }
 </page-query>
