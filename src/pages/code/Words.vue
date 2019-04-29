@@ -1,5 +1,5 @@
 <template>
-  <code-grid>
+  <code-grid display-only>
     <h1>words</h1>
 
     <BlogPostExcerpt

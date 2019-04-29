@@ -4,7 +4,7 @@
       span.display.arts Erik&nbsp;
       span.display.code Ostrom
 
-    .main.code.display
+    .main.code.display-only
       h1 code
 
       p.
@@ -13,7 +13,7 @@
 
       code-contents
 
-    .main.arts.display
+    .main.arts.display-only
       h1 arts
 
       p.

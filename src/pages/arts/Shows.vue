@@ -9,9 +9,9 @@
         </tr>
 
         <tr>
-          <th>when</th>
-          <th>where</th>
-          <th>what</th>
+          <th><h3>when</h3></th>
+          <th><h3>where</h3></th>
+          <th><h3>what</h3></th>
         </tr>
       </thead>
 
@@ -32,9 +32,9 @@
           <td colspan="3"><h2>gone down</h2></td>
         </tr>
         <tr>
-          <th>when</th>
-          <th>where</th>
-          <th>what</th>
+          <th><h3>when</h3></th>
+          <th><h3>where</h3></th>
+          <th><h3>what</h3></th>
         </tr>
       </thead>
 
@@ -151,9 +151,9 @@ table {
 }
 
 th {
-  color: var(--bright-blue);
-  font-family: var(--arts-display-font-family);
-  font-style: italic;
+  /*color: var(--display-color);*/
+  /*font-family: var(--arts-display-font-family);*/
+  /*font-style: italic;*/
 }
 
 td,
@@ -170,5 +170,9 @@ th:first-child {
 td:last-child,
 th:last-child {
   padding-right: 0;
+}
+
+h3 {
+  padding: 0;
 }
 </style>

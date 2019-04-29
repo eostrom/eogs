@@ -47,8 +47,12 @@
   --link-tk-color: hsla(var(--link-hue), 100%, 50%, 0.25);
   --bright-blue: hsl(var(--blue-hue), 90%, 50%);
   --bright-pink: hsl(var(--pink-hue), 90%, 50%);
-  --blue: hsl(var(--blue-hue), 75%, 95%);
-  --pink: hsl(var(--pink-hue), 75%, 90%);
+  --soft-blue: hsl(var(--blue-hue), 90%, 75%);
+  --soft-pink: hsl(var(--pink-hue), 90%, 75%);
+  --deep-blue: hsl(var(--blue-hue), 90%, 25%);
+  --deep-pink: hsl(var(--pink-hue), 90%, 25%);
+  --pale-blue: hsl(var(--blue-hue), 75%, 93.75%);
+  --pale-pink: hsl(var(--pink-hue), 75%, 93.75%);
   --midway-bright-color: hsl(var(--midway-hue), 90%, 50%);
   --near-bright-blue: hsl(var(--near-blue-hue), 90%, 50%);
   --near-bright-pink: hsl(var(--near-pink-hue), 90%, 50%);
@@ -69,7 +73,7 @@ html {
   height: 100%;
   width: 100%;
   font-size: var(--fs-1);
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 body {
@@ -78,7 +82,7 @@ body {
 
 h1, h2, h3, h4, h5, h6,
 code,
-.display, .main.display {
+.display, .main.display-only {
   font-family: var(--display-font-family);
   font-style: var(--display-font-style);
   color: var(--display-color);
@@ -257,7 +261,7 @@ a.side {
   overflow: scroll;
 }
 
-.main.display {
+.main.display-only {
   font-size: var(--fs-3);
   line-height: var(--fs-3);
 }
@@ -265,27 +269,33 @@ a.side {
 .main.code {
   text-align: right;
   padding-left: 12.5%;
-}
-
-.main.code.display {
-  padding-left: 25%;
+  --display-color: var(--soft-pink);
+  --background-color: var(--deep-blue);
 }
 
 .main.arts {
   text-align: left;
   padding-right: 12.5%;
   letter-spacing: 0.05em;
+  --display-color: var(--soft-blue);
+  --background-color: var(--deep-pink);
 }
 
-.main.arts.display {
-  padding-right: 25%;
+.main.code.display-only {
+  --display-color: var(--bright-pink);
+  --background-color: var(--bright-blue);
+}
+
+.main.arts.display-only {
+  --display-color: var(--bright-blue);
+  --background-color: var(--bright-pink);
 }
 
 .code {
   --body-font-family: var(--code-body-font-family);
   --display-font-family: var(--code-display-font-family);
   --display-font-style: normal;
-  --body-color: var(--pink);
+  --body-color: var(--pale-pink);
   --display-color: var(--bright-pink);
   --background-color: var(--bright-blue);
   --near-display-color: var(--near-bright-pink);
@@ -296,7 +306,7 @@ a.side {
   --body-font-family: var(--arts-body-font-family);
   --display-font-family: var(--arts-display-font-family);
   --display-font-style: italic;
-  --body-color: var(--blue);
+  --body-color: var(--pale-blue);
   --display-color: var(--bright-blue);
   --background-color: var(--bright-pink);
   --near-display-color: var(--near-bright-blue);

@@ -1,5 +1,5 @@
 <template lang="pug">
-  arts-grid
+  arts-grid(display-only)
     h1 links
 
     ul.link-list.display

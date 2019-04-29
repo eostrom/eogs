@@ -1,5 +1,5 @@
 <template>
-  <arts-grid>
+  <arts-grid display-only>
     <h1>words</h1>
 
     <BlogPostExcerpt

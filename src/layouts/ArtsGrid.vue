@@ -10,7 +10,7 @@
     g-link(to="/arts/words").side.this-side.display.arts
       .side-label arts
 
-    .main.arts
+    .main.arts(:class="{'display-only': displayOnly}")
       slot
 
     g-link(to="/code/words").side.other-side.display.code
@@ -25,6 +25,13 @@ import ArtsContents from '~/components/ArtsContents'
 export default {
   components: {
     ArtsContents
+  },
+
+  props: {
+    displayOnly: {
+      type: Boolean,
+      default: false
+    }
   }
 }
 </script>

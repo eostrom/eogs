@@ -1,5 +1,5 @@
 <template lang="pug">
-  code-grid
+  code-grid(display-only)
     h1 links
 
     ul.link-list.display
