@@ -2,7 +2,7 @@
   <arts-grid>
     <h1>shows</h1>
 
-    <table>
+    <table class="show-table">
       <thead>
         <tr>
           <td colspan="3"><h2>coming up</h2></td>
@@ -16,21 +16,19 @@
       </thead>
 
       <tbody>
-        <tr v-for="show in shows" :key="show.path">
-          <td v-html="show.when"></td>
-
-          <td>
-            <a :href="show.whereUrl" v-html="show.where"></a>
-          </td>
-
-          <td class="show-what" v-html="show.content"></td>
-        </tr>
+        <show-row
+          v-for="show in futureShows"
+          :key="show.path"
+          class="show-row"
+          :show="show"
+        />
       </tbody>
 
       <thead>
         <tr>
           <td colspan="3"><h2>gone down</h2></td>
         </tr>
+
         <tr>
           <th><h3>when</h3></th>
           <th><h3>where</h3></th>
@@ -39,74 +37,12 @@
       </thead>
 
       <tbody>
-        <tr>
-          <td>March 28</td>
-
-          <td><a href="http://honeympls.com/">Honey, Minneapolis</a></td>
-
-          <td>
-            Improv with
-            <a href="https://www.facebook.com/imatrio/">I'm a trio.</a>
-            at
-            <a href="https://www.facebook.com/events/303882380295622/">
-              Freshly Squeezed Improv.
-            </a>
-          </td>
-        </tr>
-
-        <tr>
-          <td>March 23</td>
-
-          <td>
-            <a href="http://hugetheater.com/">HUGE Theater, Minneapolis</a>
-          </td>
-
-          <td>
-            Accompanied <a href="http://stirfridaynight.org/">
-              Stir Friday Night
-            </a>
-            and
-            <a href="https://www.facebook.com/BlackMenBlackPlanet/">
-              The Black Men from a Black Planet
-            </a>
-            at the
-            <a href="https://blackandfunny.com">
-              Black and Funny Improv Festival.
-            </a>
-          </td>
-        </tr>
-
-        <tr>
-          <td>March 2</td>
-
-          <td>
-            <a href="http://hugetheater.com/">HUGE Theater, Minneapolis</a>
-          </td>
-
-          <td>
-            Accompanied
-            <a href="http://www.hugetheater.com/event/foul-play-an-improvised-agatha-christie/">
-              Foul Play: Improvised Agatha Christie.
-            </a>
-            <i>(There's been a murder.)</i>
-          </td>
-        </tr>
-
-        <tr>
-          <td>Wednesdays in January and February</td>
-
-          <td>
-            <a href="http://hugetheater.com/">HUGE Theater, Minneapolis</a>
-          </td>
-
-          <td>
-            Accompanied
-            <a href="https://www.instagram.com/rebel_grrls/">
-              Rebel Grrls
-            </a> and also sometimes Kids at Camp, The Wünderkidz, and
-            House Party.
-          </td>
-        </tr>
+        <show-row
+          v-for="show in pastShows"
+          :key="show.path"
+          class="show-row"
+          :show="show"
+        />
       </tbody>
     </table>
   </arts-grid>
@@ -130,17 +66,28 @@ query Shows {
 </page-query>
 
 <script>
-import {compose, sortBy, prop, pluck} from 'ramda'
+import {isAfter, startOfDay, toDate} from 'date-fns'
+import {filter, pluck, prop, reject, reverse, sortBy} from 'ramda'
+import ShowRow from '@/components/ShowRow'
 
-const sortNodesByPath = compose(
-  sortBy(prop('path')),
-  pluck('node')
-)
+const today = startOfDay(new Date())
+const sortByPath = sortBy(prop('path'))
+const isFuture = show => isAfter(toDate(Date.parse(show.lastDate)), today)
 
 export default {
+  components: {ShowRow},
+
   computed: {
     shows() {
-      return sortNodesByPath(this.$page.allShow.edges)
+      return pluck('node')(this.$page.allShow.edges)
+    },
+
+    futureShows() {
+      return sortByPath(filter(isFuture, this.shows))
+    },
+
+    pastShows() {
+      return reverse(sortByPath(reject(isFuture, this.shows)))
     }
   },
 
@@ -150,34 +97,28 @@ export default {
 }
 </script>
 
-<style scoped>
-table {
+<style>
+.show-table {
   width: 100%;
 }
 
-th {
-  /*color: var(--display-color);*/
-  /*font-family: var(--arts-display-font-family);*/
-  /*font-style: italic;*/
-}
-
-td,
-th {
+.show-table td,
+.show-table th {
   padding: 0.5em 1em;
   vertical-align: top;
 }
 
-td:first-child,
-th:first-child {
+.show-table td:first-child,
+.show-table th:first-child {
   padding-left: 0;
 }
 
-td:last-child,
-th:last-child {
+.show-table td:last-child,
+.show-table th:last-child {
   padding-right: 0;
 }
 
-h3 {
+.show-table h3 {
   padding: 0;
 }
 </style>
