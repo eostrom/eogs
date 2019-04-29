@@ -130,12 +130,17 @@ query Shows {
 </page-query>
 
 <script>
+import {compose, sortBy, prop, pluck} from 'ramda'
+
+const sortNodesByPath = compose(
+  sortBy(prop('path')),
+  pluck('node')
+)
+
 export default {
   computed: {
     shows() {
-      return this.$page.allShow.edges
-        .map(edge => edge.node)
-        .sort((a, b) => (a.path < b.path ? -1 : a.path > b.path ? 1 : 0))
+      return sortNodesByPath(this.$page.allShow.edges)
     }
   },
 
