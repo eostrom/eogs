@@ -126,7 +126,7 @@ Lyn-Lake, in the very space they'd left behind, in
 around.  
  
 ![A photo of the newly opened Five Watt Coffee Lyndale, with Lee
-and Caleb working behind the counter.][five-watt-photo]
+and Caleb working behind the counter.](../../src/assets/images/five-watt-lyndale.jpg)
 
 [walker]: https://walkerart.org
 [js-mn]: https://javascriptmn.com
@@ -144,5 +144,4 @@ and Caleb working behind the counter.][five-watt-photo]
 [auction]: https://www.ebay.com/itm/Arboretum-with-Im-A-Trio/113731374166?hash=item1a7aeb0c56:g:aCgAAOSwhy9cxb1C
 
 [five-watt]: http://fivewattcoffee.com/five-watt-coffee
-[five-watt-photo]: https://lh3.googleusercontent.com/tuV9pot4VAdnFO3NLsjSQ2lZtkYNXF4UasjkFFrknitvnshxaH7waWuYs42RtyySrODbymFEBjnywmByTnmJm4eHQc1xJ-SP6olOtZ8eoTKhifYioJ3Yct3HQINLeMfTom3QOKEuLi3Ol90geldiT29B12sKaW4yODp_I8BbHkyPGTtAgmFEiD7oVjaxcGbr5hF6zbLQJ3vtzVLFGOAU2N-N1VMs68VNzTxsk0n2rOSjQmG7HU23QPx9-7sNuSfPeyt0n6o45fAHXi1Q_cV2tZ90n11Wvk6tXyergNudfsZHSW9OE9HETLy2mfeVjth5agcxiWuy5p180xCp-ZK4PF1l-bHV-kCOCSOv53vxZSpZW_zR-JBA9XspRmWN4QDx0hLsCu_XlpFHTydSQpsoXNsHUrBCKlN32wCCOKFi0Z62MtqIXbgE3my-mpfDfusvw-fecBiUc5bUDPn614cITRuqZkpgXpzvkTlN6FQlYq1jVr1Nla59l7w9gGG1uZjdcTJdG5HxHgNRdb6mNX-S8zssmvGZdY4cwCnyvoIgkzeZkRTvfvIXU6o9YtfCffmnoAiN0Oa5EQ3kQhWR_AP0bV-mF1QvamOqgk8nSWjaJSyGK6YX2TwZZphGwNwSzUq6TJLVMmPGd-qBQZjRWjTZt0gutho7_AkS=w2220-h1666-no
 

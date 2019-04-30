@@ -77,7 +77,7 @@ reading the book to that future child, in mispronounced Swedish and
 mistranslated English, so a few days later I went back and bought it.
 
 ![A photo of Bokslukaren, the bookstore, with a life-sized stuffed
-gorilla sitting at the patio table outside.][gorilla]
+gorilla sitting at the patio table outside.](../../src/assets/images/stockholm-bokslukaren-gorilla.jpg)
 
 That child is now over three months old, and this week I finally started
 translating Lena Sjöberg's [<cite>Natten lyser!</cite>][natten-lyser]. 
@@ -111,7 +111,6 @@ but I've got time – this book is for readers aged 9 to 12.
 [blogs]: https://www.erikostrom.com/code/words/the-feeds-i-read
 
 [bokslukaren]: http://www.bokslukaren.com
-[gorilla]: https://lh3.googleusercontent.com/HB67rDlcp3ogF1LE7TymTbuINp_Gbjuzt3t8RBcaxaRAiRQoUeiy_YeEjrpBUAJ7dCouCMXlVo9phPPVyN35K1vN1sgKs5u3DtwfjLnGKW5OuP9yrHq7_I0LgEyQOiw2xHXXQR_iX6M=w2400
 [natten-lyser]: http://www.lenasjoberg.com/books/natten-lyser/ 
 [microsoft translator]: https://www.bing.com/translator?ref=TThis&&text=&from=sv&to=en
 [tyda.se]: https://tyda.se
