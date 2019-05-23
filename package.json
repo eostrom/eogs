@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@gridsome/source-filesystem": "^0.4.1",
-    "@gridsome/transformer-remark": "^0.3.1",
+    "@gridsome/transformer-remark": "^0.3.2",
     "date-fns": "^2.0.0-alpha.27",
     "gridsome": "^0.6.1",
     "gridsome-plugin-remark-shiki": "^0.3.0",
