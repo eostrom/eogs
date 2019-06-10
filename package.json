@@ -11,7 +11,7 @@
     "@gridsome/source-filesystem": "^0.4.1",
     "@gridsome/transformer-remark": "^0.3.1",
     "date-fns": "^2.0.0-alpha.27",
-    "gridsome": "^0.6.1",
+    "gridsome": "^0.6.4",
     "gridsome-plugin-remark-shiki": "^0.3.0",
     "normalize.css": "^8.0.1",
     "ramda": "^0.26.1"
