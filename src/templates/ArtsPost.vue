@@ -4,6 +4,7 @@ query Post ($path: String!) {
     title
     content
     date
+    image
   }
 }
 </page-query>

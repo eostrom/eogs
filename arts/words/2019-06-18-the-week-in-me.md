@@ -2,6 +2,7 @@
 title: "the week in me #6"
 date: 2019-06-18 20:34:27 CDT
 tags:         
+image: /images/bummertown-2019.jpg  
 ---
 
 Well, it happened again. I set up a new blog, I got it looking mostly the way

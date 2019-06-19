@@ -26,11 +26,16 @@ const shortDateFormat = new Intl.DateTimeFormat('en-US', {
 
 export default {
   metaInfo() {
+    const image = this.$page.post.image
+    const meta = []
+    if (image) meta.push({key: 'og:image', name: 'og:image', content: image})
+
     return {
       script: [
         { src: 'https://platform.twitter.com/widgets.js', async: true }
       ],
-      title: this.$page.post.title
+      title: this.$page.post.title,
+      meta
     }
   },
 

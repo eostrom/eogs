@@ -23,6 +23,7 @@ export default function (Vue, {router, head, isClient}) {
   })
 
   head.meta.push({
+    key: 'og:image',
     name: 'og:image',
     content: '/images/masked-accordion.png'
   })
