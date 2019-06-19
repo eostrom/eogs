@@ -36,7 +36,7 @@ help we can get. If you're interested in this at all, please
     src="/images/bummertown-2019.jpg"
     alt="A bunch of improvisers expressing different emotions, two of them holding red balloons."
   >
-  <figcaption>Bummertown USA. Photo by Adam Iverson</figcaption>
+  <figcaption>Bummertown USA. Photo by <a href="http://www.adamiversonphotography.com">Adam Iverson.</a></figcaption>
 </figure>
 
 This winter I decided to pull back on arts projects so I could focus
