@@ -1,0 +1,1 @@
+../../arts/words/2019-06-18-the-week-in-me.md

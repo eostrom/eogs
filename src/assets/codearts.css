@@ -23,10 +23,12 @@
   --space-5: 37px;
   --space-6: 60px;
 
-  --arts-body-font-family: 'Noto Serif', serif;
-  --arts-display-font-family: 'Noto Serif', serif;
-  --code-body-font-family: 'Roboto', sans-serif;
-  --code-display-font-family: 'Roboto Mono', monospace;
+  --arts-body-font-family: 'Noto Serif', 'Georgia', serif;
+  --arts-display-font-family: 'Noto Serif', 'Georgia', serif;
+  --arts-body-fallback-letter-spacing: 0.6px;
+  --code-body-font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  --code-body-word-spacing: 0.1px;
+  --code-display-font-family: 'Roboto Mono', 'Courier New', monospace;
   --footer-font-family: 'Noto Serif', serif;
 
   --blue-hue: 225;
@@ -147,12 +149,21 @@ p {
   padding: 0.5em 0;
 }
 
-p, ul, ol {
+p, ul, ol, figure {
   max-width: 60ch;
 }
 
-p img, li img {
+p img, li img, figure img {
   max-width: 100%;
+}
+
+figure {
+  margin: 0 0 1em;
+}
+
+figcaption {
+  font-style: italic;
+  text-align: right;
 }
 
 a {
@@ -318,7 +329,7 @@ a.side {
 }
 
 .body ul {
-  list-style-type: circle;
+  list-style-type: disc;
 }
 
 .body li {
