@@ -302,6 +302,10 @@ a.side {
   --background-color: var(--bright-pink);
 }
 
+.main > * {
+  max-width: 100%;
+}
+
 .code {
   --body-font-family: var(--code-body-font-family);
   --display-font-family: var(--code-display-font-family);
@@ -346,6 +350,7 @@ a.side {
 
 pre.shiki {
   max-width: 80ch;
+  overflow-x: scroll;
 }
 
 .footnotes {
@@ -382,7 +387,7 @@ pre code {
   padding: 0;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   .braingrid {
     grid-template-columns: 3rem 1fr 1fr 3rem;
   }
@@ -418,5 +423,9 @@ pre code {
 
   .other-side .side-label {
     top: 6.5rem;
+  }
+
+  pre code {
+    font-size: var(--fs-0);
   }
 }

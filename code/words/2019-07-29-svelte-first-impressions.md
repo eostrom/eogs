@@ -32,7 +32,8 @@ Here's some [code from the tutorial][reactive-declarations]:
 </script>
 
 <button on:click={handleClick}>
-  Clicked {count} {count === 1 ? 'time' : 'times'}
+  Clicked {count}
+  {count === 1 ? 'time' : 'times'}
 </button> 
 
 <p>{count} doubled is {doubled}</p>
@@ -67,7 +68,8 @@ outside of them. Here's another [sample from the tutorial][custom-stores]:
 
 ```javascript
 function createCount() {
-  const { subscribe, set, update } = writable(0);
+  const { subscribe, set, update }
+    = writable(0);
 
   return {
     subscribe,
@@ -97,7 +99,9 @@ for promises][await-blocks]:
 {:then number}
   <p>The number is {number}</p>
 {:catch error}
-  <p style="color: red">{error.message}</p>
+  <p style="color: red">
+    {error.message}
+  </p>
 {/await}
 ```
   
