@@ -1,0 +1,1 @@
+../../arts/words/2019-08-09-the-week-in-me.md
