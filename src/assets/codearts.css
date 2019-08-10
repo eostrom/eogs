@@ -387,6 +387,13 @@ pre code {
   padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6,
+.brand,
+.main.display,
+pre code {
+  transition: font-size 250ms, line-height 250ms, height 250ms;
+}
+
 @media (max-width: 640px) {
   .braingrid {
     grid-template-columns: 3rem 1fr 1fr 3rem;
