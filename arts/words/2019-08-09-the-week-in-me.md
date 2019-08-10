@@ -66,8 +66,8 @@ to share:
   down on [ClimateChoice.co.][climatechoice]
   This is a tiny little thing but it
   makes me unreasonably happy. 
-- I'm participating in the Impact Makers [Climate Fixathon.] You're
-  welcome, planet. 
+- I'm participating in the Impact Makers [Climate Fixathon.][Fixathon]
+  You're welcome, planet!
 
 
 
