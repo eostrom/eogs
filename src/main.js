@@ -23,8 +23,20 @@ export default function (Vue, {router, head, isClient}) {
   })
 
   head.meta.push({
+    key: 'twitter:card',
+    name: 'twitter:card',
+    content: 'summary'
+  })
+
+  head.meta.push({
+    key: 'twitter:site',
+    name: 'twitter:site',
+    content: '@erikostrom'
+  })
+
+  head.meta.push({
     key: 'og:image',
     name: 'og:image',
-    content: '/images/masked-accordion.png'
+    content: 'https://www.erikostrom.com/images/masked-accordion.png'
   })
 }
