@@ -29,6 +29,11 @@ export default {
     const image = this.$page.post.image
     const meta = []
     if (image) meta.push({key: 'og:image', name: 'og:image', content: image})
+    meta.push({
+      key: 'twitter:title',
+      name: 'twitter:title',
+      content: `${this.$page.post.title} - Erik Ostrom`,
+    })
 
     return {
       script: [

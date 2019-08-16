@@ -35,6 +35,12 @@ export default function (Vue, {router, head, isClient}) {
   })
 
   head.meta.push({
+    key: 'twitter:title',
+    name: 'twitter:title',
+    content: 'code|arts - Erik Ostrom'
+  })
+
+  head.meta.push({
     key: 'og:image',
     name: 'og:image',
     content: 'https://www.erikostrom.com/images/masked-accordion.png'
