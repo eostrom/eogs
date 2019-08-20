@@ -15,6 +15,14 @@
   </component>
 </template>
 
+<static-query>
+ query {
+  metaData {
+    siteUrl
+  }
+}
+</static-query>
+
 <script>
 import { parseISO } from 'date-fns'
 
@@ -28,7 +36,14 @@ export default {
   metaInfo() {
     const image = this.$page.post.image
     const meta = []
-    if (image) meta.push({key: 'og:image', name: 'og:image', content: image})
+    if (image) {
+      meta.push({
+        key: 'og:image',
+        name: 'og:image',
+        content: new URL(image, this.$static.metaData.siteUrl).href
+      })
+    }
+
     meta.push({
       key: 'twitter:title',
       name: 'twitter:title',

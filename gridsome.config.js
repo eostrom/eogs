@@ -9,6 +9,7 @@ const theme = shiki.loadTheme('./config/Night Owl-color-theme.json')
 
 module.exports = {
   siteName: 'Erik Ostrom',
+  siteUrl: 'https://www.erikostrom.com/',
 
   transformers: {
     remark: {
