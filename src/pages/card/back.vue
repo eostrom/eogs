@@ -12,7 +12,7 @@
 .card {
   width: 3.66in;
   height: 2.16in;
-  background: url('/images/card/template.jpg') var(--bright-pink) no-repeat
+  background: url('/images/card/template.jpg') var(--soft-pink) no-repeat
     center/contain;
   padding: 0.08in;
 }
@@ -26,6 +26,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: inherit;
 }
 
 h1::before,
@@ -45,6 +46,8 @@ h2 {
 h1,
 h2,
 h3 {
+  color: var(--bright-blue);
+  font-weight: normal;
   padding: 0;
 }
 
