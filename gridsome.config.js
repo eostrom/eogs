@@ -22,21 +22,24 @@ module.exports = {
     }
   },
 
+  templates: {
+    ArtsPost: '/arts/words/:title',
+    CodePost: '/code/words/:title'
+  },
+
   plugins: [
     {
       use: '@gridsome/source-filesystem',
       options: {
         path: 'code/words/*.md',
-        typeName: 'CodePost',
-        route: 'code/words/:slug'
+        typeName: 'CodePost'
       }
     },
     {
       use: '@gridsome/source-filesystem',
       options: {
         path: 'arts/words/*.md',
-        typeName: 'ArtsPost',
-        route: 'arts/words/:slug'
+        typeName: 'ArtsPost'
       }
     },
     {

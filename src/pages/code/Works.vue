@@ -73,7 +73,7 @@
 
     <p>
       <a href="mailto:code@erikostrom.com">Email me</a> or visit
-      <g-link to="/code/links">my links page.</g-link>
+      <g-link to="/code/links/">my links page.</g-link>
     </p>
   </code-grid>
 </template>

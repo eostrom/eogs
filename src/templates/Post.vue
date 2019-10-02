@@ -17,7 +17,7 @@
 
 <static-query>
  query {
-  metaData {
+  metadata {
     siteUrl
   }
 }
@@ -40,7 +40,7 @@ export default {
       meta.push({
         key: 'og:image',
         name: 'og:image',
-        content: new URL(image, this.$static.metaData.siteUrl).href
+        content: new URL(image, this.$static.metadata.siteUrl).href
       })
     }
 

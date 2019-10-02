@@ -7,13 +7,13 @@
 
     code-contents.contents-header.display
 
-    g-link(to="/code/words").side.this-side.display.code
+    g-link(to="/code/words/").side.this-side.display.code
       .side-label code
 
     .main.code(:class="{'display-only': displayOnly}")
       slot
 
-    g-link(to="/arts/words").side.other-side.display.arts
+    g-link(to="/arts/words/").side.other-side.display.arts
       .side-label arts
 
     .footer © 2019 Erik Ostrom
