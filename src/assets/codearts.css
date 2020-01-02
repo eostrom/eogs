@@ -149,7 +149,7 @@ p {
   padding: 0.5em 0;
 }
 
-p, ul, ol, figure {
+p, ul, ol, figure, iframe {
   max-width: 60ch;
 }
 
