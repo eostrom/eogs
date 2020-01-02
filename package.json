@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@gridsome/source-filesystem": "^0.6.0",
-    "@gridsome/transformer-remark": "^0.3.1",
+    "@gridsome/transformer-remark": "^0.4.0",
     "date-fns": "^2.0.0",
     "gridsome": "^0.7.0",
     "gridsome-plugin-remark-shiki": "^0.3.0",
@@ -17,14 +17,14 @@
     "ramda": "^0.26.1"
   },
   "devDependencies": {
-    "@vue/eslint-config-prettier": "^5.0.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
     "eslint": "^6.2.1",
     "eslint-plugin-prettier": "^3.0.1",
-    "eslint-plugin-vue": "^5.2.2",
+    "eslint-plugin-vue": "^6.1.2",
     "postcss-nesting": "^7.0.1",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
-    "stylelint": "^10.1.0",
-    "stylelint-config-recommended": "^2.1.0"
+    "stylelint": "^12.0.1",
+    "stylelint-config-recommended": "^3.0.0"
   }
 }
