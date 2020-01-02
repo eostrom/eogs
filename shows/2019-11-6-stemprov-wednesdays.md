@@ -4,6 +4,6 @@ where: HUGE Theater
 whereUrl: http://www.hugetheater.com/
 lastDate: 2019-12-31
 ---
-[STEMprov] at HUGE! Details TBA.
+[STEMprov] presents an improvised technical conference! Plus three other groups.
 
 [stemprov]: https://www.facebook.com/STEMprovMN/
