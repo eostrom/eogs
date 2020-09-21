@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@gridsome/source-filesystem": "^0.6.0",
-    "@gridsome/transformer-remark": "^0.4.0",
+    "@gridsome/transformer-remark": "^0.6.3",
     "date-fns": "^2.0.0",
     "gridsome": "^0.7.0",
     "gridsome-plugin-remark-shiki": "^0.3.0",
@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@vue/eslint-config-prettier": "^6.0.0",
-    "eslint": "^6.2.1",
+    "eslint": "^7.9.0",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-vue": "^6.1.2",
     "postcss-nesting": "^7.0.1",
