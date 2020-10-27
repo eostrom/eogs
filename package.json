@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@vue/eslint-config-prettier": "^6.0.0",
-    "eslint": "^7.9.0",
+    "eslint": "^7.12.1",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-vue": "^6.1.2",
     "postcss-nesting": "^7.0.1",
